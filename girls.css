@@ -11,8 +11,8 @@
 .product-card {
     width: 250px;
     border: 1px solid rgb(121, 124, 135);
-    padding: 15px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
     text-align: center;
     border-radius: 10px;
 
@@ -23,6 +23,8 @@
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
+    object-fit: contain;
+    display: block;
 }
 
 
