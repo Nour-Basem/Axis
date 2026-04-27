@@ -183,7 +183,7 @@ h1 { color:#061033 ;
      margin-top: 16px;
      margin-bottom: 0px;}
 
-.sizephoto {width:300px;  height: 350px;}
+.sizephoto {width:300px;  height: 350px; border-radius: 15px; margin-top: 15px;}
 
 
 
@@ -279,6 +279,12 @@ h3 {
 .add-to-cart:hover{
     background-color: rgb(224, 224, 224);
 }
+
+
+
+
+
+
 @media(max-width:600px){
     nav {
         flex-direction: column;
