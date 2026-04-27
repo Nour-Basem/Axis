@@ -1,4 +1,3 @@
-
 const allimages = document.querySelectorAll('.skin-img');
 allimages.forEach(img=>{
     img.onclick=function(){

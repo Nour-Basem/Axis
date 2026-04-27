@@ -1,3 +1,198 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+}
+
+:root {
+    --primary-navy: #061033;
+    --light-beige: #ECE8DA;
+    --secondary-gray: #666;
+    --accent-blue: #2C344F;
+    --nav-bg: var(--primary-navy);
+    --nav-text: var(--light-beige);
+    --nav-hover: var(--secondary-gray);
+    --bg-main: #C6C4BE;
+    --text-navy: #061033;
+    --nav-border: #2C344F;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-navy);
+    min-height: 100vh;
+}
+
+img {
+    height: 80px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--nav-bg);
+    color: var(--nav-text) !important;
+    transition: 0.3s;
+    border-bottom: 1px solid var(--accent-blue);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 2px 4%;
+    min-height: 60px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex: 2;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--nav-text);
+    font-size: 13px;
+    transition: color 0.3s;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+nav ul li a:hover {
+    color: var(--nav-hover);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--bg-main);
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    z-index: 10000;
+    padding: 10px 0;
+    border-radius: 4px;
+    border-top: 2px solid var(--accent-blue);
+}
+
+.dropdown-content li {
+    width: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: fadeInUp 0.3s ease;
+}
+
+.dropdown-content li a {
+    color: var(--primary-navy);
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.dropdown-content li a:hover {
+    background-color: rgba(6, 16, 51, 0.05);
+    color: var(--primary-navy);
+}
+
+.dropdown a i {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+.dropdown:hover i {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    position: relative;
+    gap: 15px;
+}
+
+.icons a {
+    text-decoration: none;
+    color: var(--nav-text);
+    font-size: 20px;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.icons a:hover {
+    color: #666;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    transition: all 0.4s ease;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+
+.search:hover .search-input {
+    opacity: 1;
+    visibility: visible;
+    width: 180px;
+}
+
+.icons input:focus {
+    display: block;
+    outline: none;
+    border-color: #000;
+}
+
 .products {
     display: flex;
     gap: 20px;
@@ -5,6 +200,7 @@
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(6, 16, 51);
     justify-content: space-between;
+
 
 }
 
@@ -15,9 +211,13 @@
     margin: 10px;
     text-align: center;
     border-radius: 10px;
+    border-color: rgb(6, 16, 51);
 
 }
 
+.product-card p {
+    display: none;
+}
 .cart-btn {
     display: flex;
     align-items: center;
@@ -71,6 +271,17 @@
 
 
 @media (max-width :768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+
+    }
+
+    ul {
+        flex-direction: row;
+        gap: 15px;
+    }
+
     .text {
         font-size: 5vw;
 

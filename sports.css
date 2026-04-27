@@ -1,8 +1,51 @@
-* {
-    margin: 0;
-    padding: 0;
+h1,p{
+    color: rgb(6, 16, 51);
+}
+.imggg{
+    width: 300px;height: 300px;
+    width: 100%;
+    max-width: 350px;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgb(121, 124, 135);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    vertical-align: top;
+}
+.cart-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    color: rgb(6, 16, 51);
+    background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    transition: all 0.3s ease;
+}
+.cart-text{
+    display: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+.cart-btn:hover .cart-text{
+    display: inline;
+}
+.cart-btn:hover{
+    background-color: rgb(224, 224, 224);
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    padding: 50px;
 
 }
 :root {
@@ -23,14 +66,14 @@ body {
     min-height: 100vh;
 }
 
-.logo-photo{
+.navBar{
     height: 80px; 
     width: auto;  
     display: block;
     margin: 0 auto; 
     transition: transform 0.3s;
 }
-.logo-photo:hover {
+img:hover {
     transform: scale(1.1); 
 }
 .logo{
@@ -53,7 +96,6 @@ nav{
     padding: 2px 4%; 
     min-height: 60px;
 }
-
 nav ul {
     list-style: none;
     display: flex;
@@ -101,7 +143,7 @@ nav ul li a:hover {
 
 .dropdown:hover .dropdown-content {
     display: block; 
-    animation: fadeInUp 0.3s ease;
+   animation: fadeInUp 0.3s ease;
 }
 
 .dropdown-content li a {
@@ -174,4 +216,13 @@ nav ul li a:hover {
     display: block;
     outline: none;
     border-color: #000;
+}
+@media(max-width:600px){
+    img{
+        max-width: 90%;
+        margin-bottom: 30px;
+    }
+    h1{
+        font-size: 24px;
+    }
 }
