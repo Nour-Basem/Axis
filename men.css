@@ -1,0 +1,93 @@
+.logo {
+    text-align: center;
+    color: rgb(6, 16, 51);
+}
+
+nav {
+    text-align: center;
+    color: rgb(6, 16, 51);
+}
+
+body {
+    background-color: #f8f9fa; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #061033;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    color: #061033;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+.product-card {
+    background-color: #ECE8DA;
+    border: 1px solid #C6C4BE; 
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: #9FA0A2;
+}
+
+.product-card img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; 
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-info h3 {
+    font-size: 21px;
+    margin: 10px 0;
+    color: #061033;
+}
+
+.new-price {
+    color: #53586B;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.old-price {
+    color: #797C87;
+    text-decoration: line-through;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.add-to-cart {
+    background-color: #2C344F;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #061033;
+}
+
+.add-to-cart i {
+    font-size: 17.5px;
+}
