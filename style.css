@@ -23,14 +23,14 @@ body {
     min-height: 100vh;
 }
 
-img{
+.logo-photo{
     height: 80px; 
     width: auto;  
     display: block;
     margin: 0 auto; 
     transition: transform 0.3s;
 }
-img:hover {
+.logo-photo:hover {
     transform: scale(1.1); 
 }
 .logo{
