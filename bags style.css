@@ -178,7 +178,7 @@ nav ul li a:hover {
 
 
 body {background-color: #c6c4be;}
-h1 { font-size:60px; color:#061033 ; text-align: center;}
+h1 { font-size:60px; color:#061033 ; text-align: center; padding-top: 2px;}
 
 .sizephoto {width:350px;  height: 350px;}
 
@@ -230,12 +230,17 @@ h3 {
 .price-bag {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #061033 ; 
-    justify-content: center ;
-    align-items: center;
     text-align: center;
+    
 
 }
+
+.old-price {
+     font-size: 1.2rem;
+     text-decoration: line-through;
+     text-align: center;
+     font-weight:bold;
+     }
 
 .main-container {
     display: flex;
