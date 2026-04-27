@@ -256,3 +256,20 @@ h3 {
     font-size: 1.5rem;
     cursor: pointer;
 }
+@media(max-width:600px){
+    nav {
+        flex-direction: column;
+        gap: 15px;
+
+    }
+
+    ul {
+        flex-direction:row;
+        gap: 15px;
+    }
+
+    .text {
+        font-size: 5vw;
+
+    }
+}
