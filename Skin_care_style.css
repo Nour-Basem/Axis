@@ -247,6 +247,12 @@ main{
     padding: 50px;
 
 }
+.images img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
 .images{
     width: 100%;
     max-width: 350px;
@@ -267,6 +273,21 @@ main{
 }
 
 @media(max-width:600px){
+    nav {
+        flex-direction: column;
+        gap: 15px;
+
+    }
+
+    ul {
+        flex-direction:row;
+        gap: 15px;
+    }
+
+    .text {
+        font-size: 5vw;
+
+    }
     .images{
         max-width: 90%;
         margin-bottom: 30px;

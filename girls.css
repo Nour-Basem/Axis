@@ -273,11 +273,13 @@ nav ul li a:hover {
 @media (max-width :768px) {
     nav {
         flex-direction: column;
+        gap: 15px;
 
     }
 
     ul {
-        flex-direction: column;
+        flex-direction: row;
+        gap: 15px;
     }
 
     .text {
