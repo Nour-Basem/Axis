@@ -220,7 +220,12 @@ nav ul li a:hover {
     margin: 10px;
     text-align: center;
     border-radius: 10px;
+    border-color: rgb(6, 16, 51);
 
+}
+
+.product-card p {
+    display: none;
 }
 
 .cart-btn {
@@ -276,6 +281,15 @@ nav ul li a:hover {
 
 
 @media (max-width :768px) {
+    nav {
+        flex-direction: column;
+
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
     .text {
         font-size: 5vw;
 
