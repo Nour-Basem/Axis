@@ -5,6 +5,7 @@
     font-family: Arial, sans-serif;
 
 }
+
 :root {
     --primary-navy: #061033;
     --light-beige: #ECE8DA;
@@ -13,44 +14,48 @@
     --nav-bg: var(--primary-navy);
     --nav-text: var(--light-beige);
     --nav-hover: var(--secondary-gray);
-    --bg-main: #C6C4BE; 
+    --bg-main: #C6C4BE;
     --text-navy: #061033;
     --nav-border: #2C344F;
 }
+
 body {
     background-color: var(--bg-main);
     color: var(--text-navy);
     min-height: 100vh;
 }
 
-.logo-photo{
-    height: 80px; 
-    width: auto;  
+.logo-photo {
+    height: 80px;
+    width: auto;
     display: block;
-    margin: 0 auto; 
+    margin: 0 auto;
     transition: transform 0.3s;
 }
+
 .logo-photo:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
     flex: 1;
     justify-content: flex-start;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--nav-bg); 
-    color: var(--nav-text) !important; 
-    transition: 0.3s; 
-    border-bottom: 1px solid var(--accent-blue); 
-    position: sticky; 
+    background-color: var(--nav-bg);
+    color: var(--nav-text) !important;
+    transition: 0.3s;
+    border-bottom: 1px solid var(--accent-blue);
+    position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 2px 4%; 
+    padding: 2px 4%;
     min-height: 60px;
 }
 
@@ -60,10 +65,11 @@ nav ul {
     flex: 2;
     gap: 25px;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     padding: 0;
     margin: 0;
 }
+
 nav ul li a {
     text-decoration: none;
     color: var(--nav-text);
@@ -73,34 +79,37 @@ nav ul li a {
     letter-spacing: 1px;
     line-height: 1;
 }
+
 nav ul li a:hover {
     color: var(--nav-hover);
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
 .dropdown-content {
-    display: none; 
+    display: none;
     position: absolute;
-    top: 100%; 
+    top: 100%;
     left: 50%;
-    transform: translateX(-50%); 
+    transform: translateX(-50%);
     background-color: var(--bg-main);
     min-width: 180px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.15); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     z-index: 10000;
     padding: 10px 0;
     border-radius: 4px;
-    border-top: 2px solid var(--accent-blue); 
+    border-top: 2px solid var(--accent-blue);
 }
+
 .dropdown-content li {
     width: 100%;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block; 
+    display: block;
     animation: fadeInUp 0.3s ease;
 }
 
@@ -111,22 +120,26 @@ nav ul li a:hover {
     display: block;
     font-size: 14px;
     transition: 0.3s;
-    text-align: center; 
+    text-align: center;
 }
+
 .dropdown-content li a:hover {
-    background-color: rgba(6, 16, 51, 0.05); 
+    background-color: rgba(6, 16, 51, 0.05);
     color: var(--primary-navy);
 }
+
 .dropdown a i {
-    display: inline-block; 
+    display: inline-block;
     transition: transform 0.3s ease;
     margin-left: 5px;
-    font-size: 10px; 
+    font-size: 10px;
 }
+
 .dropdown:hover i {
     transform: rotate(180deg);
     transition: 0.3s;
 }
+
 .icons {
     display: flex;
     align-items: center;
@@ -135,6 +148,7 @@ nav ul li a:hover {
     position: relative;
     gap: 15px;
 }
+
 .icons a {
     text-decoration: none;
     color: var(--nav-text);
@@ -144,30 +158,33 @@ nav ul li a:hover {
 }
 
 .icons a:hover {
-    color: #666; 
+    color: #666;
 }
+
 .search {
     position: relative;
     display: flex;
     align-items: center;
 }
+
 .search-input {
     position: absolute;
-    right: 30px;  
+    right: 30px;
     top: 50%;
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
     opacity: 0;
     visibility: hidden;
     width: 0;
     transition: all 0.4s ease;
     padding: 5px 10px;
     border: 1px solid #000;
-    border-radius: 20px; 
+    border-radius: 20px;
 }
+
 .search:hover .search-input {
     opacity: 1;
     visibility: visible;
-    width: 180px; 
+    width: 180px;
 }
 
 .icons input:focus {
@@ -175,19 +192,40 @@ nav ul li a:hover {
     outline: none;
     border-color: #000;
 }
+
 .hero {
     position: relative;
     width: 100%;
-    height:auto;
+    height: 100vh;
+    overflow: hidden;
+
 }
+
 .home-image {
-    width: 100%; 
-    height: 65vh; 
-   display: block;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+
 }
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("background\ dark.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
 .home-image:hover {
     transform: scale(1.05);
+
 }
+
 .hero-text {
     color: var(--text-navy);
     position: absolute;
@@ -196,11 +234,12 @@ nav ul li a:hover {
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column; 
-    align-items: center;  
-    justify-content: flex-start; 
-    padding-bottom: 2%; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 2%;
 }
+
 .hero-text h1 {
     font-weight: 700;
     line-height: 1.1;
@@ -215,7 +254,10 @@ nav ul li a:hover {
     margin-bottom: 35px;
     opacity: 0.8;
 }
-.cta-btn{
+
+
+
+.cta-btn {
     background-color: var(--primary-navy);
     color: var(--light-beige);
     text-decoration: none;
@@ -227,27 +269,25 @@ nav ul li a:hover {
     border: 2px solid var(--primary-navy);
     align-items: center;
     padding: 12px 35px;
-    display: inline-block; 
+    display: inline-block;
     cursor: pointer;
-    position: relative;
     z-index: 11;
+
 }
 
 
 .hero-actions {
-    display: flex;
-    justify-content: center;
-    align-items: center;     
-    height: 100%;
-    padding: 15px 40px;
-    margin-top: 30px; 
-    position: relative; /* ضيفي ده */
+    position: relative;
     z-index: 10;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
 .cta-btn:hover {
     background-color: transparent !important;
     color: var(--primary-navy) !important;
     transform: translateY(-5px);
     transition: all 0.3s ease;
 }
-
