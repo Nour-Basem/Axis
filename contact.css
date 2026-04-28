@@ -180,3 +180,43 @@ h1{
     text-align: center;
     margin-top: 16px;
 }
+table{
+    width: 85%;
+    margin:40px auto;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+}
+thead th{
+    background: #1a2a4f;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+}
+thead th:first-child{
+    overflow: hidden;
+    border-top-left-radius: 12px;
+}
+thead th:last-child{
+    border-top-right-radius: 12px;
+}
+tbody tr{
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    text-align: center;
+}
+tbody td{
+    padding: 14px;
+    text-align: center;
+}
+tbody td:first-child{
+    border-radius: 12px 0 0 12px;
+}
+tbody td:last-child{
+    border-radius: 0 12px 12px 0;
+}
+tbody tr:hover{
+    transform: scale(1.01);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    background:#eef2ff;
+}
