@@ -175,126 +175,20 @@ nav ul li a:hover {
     outline: none;
     border-color: #000;
 }
-
-pre{
-    color: rgb(6, 16, 51);
-}
 h1{
     color: rgb(6, 16, 51);
     text-align: center;
     margin-top: 16px;
-    margin-bottom: 0px;
 }
-img{
-    width: 400px;height: 300px;
+.video-wrapper{
+    width: 80%;
+    max-width: 500px;
+    margin: 40px auto;
     border-radius: 15px;
-    
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
-.description{
+.video-wrapper video{
     width: 100%;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    text-align: center;
-    font-size: 14px;
-    display: none;
-    margin-top: 15px;
-    font-family: sans-serif;
-}
-.cart-btn{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 15px;
-    color: rgb(6, 16, 51);
-    background-color: rgb(240, 240, 240);
-    border: 1px solid rgb(204, 204, 204);
-    border-radius: 5px;
-    cursor: pointer;
-    width: fit-content;
-    transition: all 0.3s ease;
-}
-.cart-text{
-    display: none;
-    font-size: 14px;
-    font-weight: bold;
-}
-.cart-btn:hover .cart-text{
-    display: inline;
-}
-.cart-btn:hover{
-    background-color: rgb(224, 224, 224);
-}
-.product-price{
-    margin: 15px 0;font-family: sans-serif;
-}
-.product-price span{
-    text-decoration: line-through;
-    color: rgb(121, 124, 135);
-    font-size: 16px;
-    margin-right: 10px;
-}
-.product-price{
-    font-size: 24px;
-    font-weight: bold;
-    color: rgb(6, 16, 51);
-}
-h2{
-    color:rgb(6, 16, 51) ;
-}
-main{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-    padding: 50px;
-
-}
-.images img{
-    max-width: 100%;
-    height: auto;
     display: block;
-    margin: 0 auto;
-}
-.images{
-    width: 100%;
-    max-width: 300px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border: 1px solid rgb(228, 231, 240);
-    padding: 20px;
-    border-radius: 15px;
-    background-color: #C6C4BE;
-    vertical-align: top;
-}
-.images img:hover{
-    transform: scale(1.1);
-    transition: 0.3s;
-}
-
-@media(max-width:600px){
-    nav {
-        flex-direction: column;
-        gap: 15px;
-
-    }
-
-    ul {
-        flex-direction:row;
-        gap: 15px;
-    }
-
-    .text {
-        font-size: 5vw;
-
-    }
-    .images{
-        max-width: 90%;
-        margin-bottom: 30px;
-    }
-    h1.skin{
-        font-size: 24px;
-    }
 }
