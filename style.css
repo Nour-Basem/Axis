@@ -342,3 +342,46 @@ nav ul li a:hover {
 .category-card:hover img {
     transform: scale(1.1);
 }
+
+
+
+
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100px); 
+    opacity: 0; 
+  }
+  100% {
+    transform: translateX(0); 
+    opacity: 1; 
+  }
+}
+
+
+.hero-text {
+  animation: slideIn 1s ease-out;
+}
+
+
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-30px); } 
+}
+
+.right-side {
+  animation: float 3s ease-in-out infinite; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
