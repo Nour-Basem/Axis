@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -193,15 +193,6 @@ nav ul li a:hover {
     border-color: #000;
 }
 
-
-
-
-
-
-
-
-
-
 .products {
     display: flex;
     gap: 20px;
@@ -227,7 +218,6 @@ nav ul li a:hover {
 .product-card p {
     display: none;
 }
-
 .cart-btn {
     display: flex;
     align-items: center;
@@ -283,11 +273,13 @@ nav ul li a:hover {
 @media (max-width :768px) {
     nav {
         flex-direction: column;
+        gap: 15px;
 
     }
 
     ul {
-        flex-direction: column;
+        flex-direction: row;
+        gap: 15px;
     }
 
     .text {
