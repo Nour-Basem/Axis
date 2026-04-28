@@ -243,7 +243,7 @@ nav ul li a:hover {
 .right-side {
     flex: 1;
     display: flex;
-    flex-direction: column; /* يخلي الزرار تحت الصورة */
+    flex-direction: column !important; /* يخلي الزرار تحت الصورة */
     align-items: center; /* يوسطن الزرار تحت الصورة بالظبط */
     gap: 20px; /* مسافة بين الصورة والزرار */
 }
@@ -264,23 +264,14 @@ nav ul li a:hover {
     z-index: 11;
 
 }
-
-
 .hero-actions {
     display: flex;
-    justify-content: center;
-    align-items: center;     
     height: auto;
     width: auto;
     padding: 0;
-    justify-content: flex-start; /* يخلي الزرار يبدأ من الشمال */
     margin-top: 25px;
-    position: relative; /* ضيفي ده */
+    ;
     z-index: 10;
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .cta-btn:hover {
