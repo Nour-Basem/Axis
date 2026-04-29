@@ -13,3 +13,8 @@ images.forEach(function (img) {
     });
 });
 
+let darkBtn = document.querySelector(".theme-toggle");
+
+darkBtn.addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+});
