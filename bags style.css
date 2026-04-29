@@ -217,7 +217,8 @@ h1 {
 .product-card {
     width: 350px;
     height: 500px;
-    background-color: #c6c4be;
+    background-color: #ECE8DA;
+    border: 1px solid #C6C4BE; 
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -308,6 +309,9 @@ h3 {
 .add-to-cart:hover {
     background-color: rgb(224, 224, 224);
 }
+
+
+
 
 .main-footer {
     background-color: var(--primary-navy); 
