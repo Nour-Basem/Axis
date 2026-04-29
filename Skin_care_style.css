@@ -203,48 +203,80 @@ nav ul li a:hover {
     outline: none;
     border-color: #000;
 }
-
-pre {
-    color: rgb(6, 16, 51);
-}
-
-h1 {
-    color: rgb(6, 16, 51);
+h1{
     text-align: center;
     margin-top: 16px;
-    margin-bottom: 0px;
 }
 
-img {
-    width: 400px;
-    height: 300px;
-    border-radius: 15px;
-
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 40px 20px;
 }
 
-.description {
-    width: 100%;
-    white-space: pre-wrap;
-    word-wrap: break-word;
+.product-card {
+    width: 350px;
+    background-color: var(--card-bg);
+    color: var(--card-text);
+    border: 1px solid var(--card-bg);
+    padding: 20px;
     text-align: center;
-    font-size: 14px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-color: #9FA0A2;
+}
+
+.product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+}
+
+.old {
+    text-decoration: line-through;
+    color: rgb(121, 124, 135);
+    margin-right: 10px;
+}
+
+.new {
+    color: var(--price-new);
+    font-weight: bold;
+}
+
+.product-card p {
     display: none;
-    margin-top: 15px;
-    font-family: sans-serif;
 }
 
 .cart-btn {
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    gap: 8px;
+
     padding: 10px 15px;
-    color: var(--cart-btn-bg);
-    background-color: var(--cart-btn-icon);
-    border:none;
-    border-radius: 5px;
+    background-color: var(--cart-btn-bg) !important;
+    color: var(--cart-btn-icon) !important;
+
+    border: none;
+    border-radius: 6px;
     cursor: pointer;
+
     width: fit-content;
+    margin: 15px auto 0;
+
     transition: all 0.3s ease;
+
 }
 
 .cart-text {
@@ -258,94 +290,7 @@ img {
 }
 
 .cart-btn:hover {
-    background-color: rgb(224, 224, 224);
-}
-
-.product-price {
-    margin: 15px 0;
-    font-family: sans-serif;
-}
-
-.product-price span {
-    text-decoration: line-through;
-    color: rgb(121, 124, 135);
-    font-size: 16px;
-    margin-right: 10px;
-}
-
-.product-price {
-    font-size: 24px;
-    font-weight: bold;
-    color: rgb(6, 16, 51);
-}
-
-h2 {
-    color: rgb(6, 16, 51);
-}
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-
-}
-
-.images img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    background-color: white;
-}
-.images{
-    width: 100%;
-    max-width: 300px;
-    box-sizing: border-box;
-    display: flex;
-    flex: 0 1 300px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border: 1px solid var(--accent-blue);
-    padding: 20px;
-    border-radius: 15px;
-    background-color: var(--card-bg);
-    color: var(--card-text);
-    vertical-align: top;
-    transition: all 0.3s ease;
-}
-.images img:hover{
-    transform: scale(1.1);
-    transition: 0.3s;
-}
-
-@media(max-width:600px) {
-    nav {
-        flex-direction: column;
-        gap: 15px;
-
-    }
-
-    ul {
-        flex-direction: row;
-        gap: 15px;
-    }
-
-    .text {
-        font-size: 5vw;
-
-    }
-
-    .images {
-        max-width: 90%;
-        margin-bottom: 30px;
-    }
-
-    h1.skin {
-        font-size: 24px;
-    }
+    background-color: #061033;
 }
 
 .main-footer {

@@ -1,18 +1,18 @@
-const allimages = document.querySelectorAll('.skin-img');
-allimages.forEach(img => {
-    img.onclick = function () {
-        const parent = this.parentElement;
-        const desc = parent.querySelector('.description');
-        if (desc.style.display === "none" || desc.style.display === "") {
-            desc.style.display = "block";
-        }
-        else {
-            desc.style.display = "none";
-        }
-    }
-}
+let images = document.querySelectorAll(".product-card img");
 
-)
+images.forEach(function (img) {
+    img.addEventListener("click", function () {
+
+        let description = this.parentElement.querySelector("p");
+
+        if (description.style.display === "none" || description.style.display === "") {
+            description.style.display = "block";
+        } else {
+            description.style.display = "none";
+        }
+    });
+});
+
 const themeBtn = document.getElementById('themetoggle');
 const icon = document.getElementById('themeicon');
 
@@ -24,6 +24,7 @@ if (savedTheme === 'dark') {
     icon.classList.replace('fa-moon', 'fa-sun');
 
 }
+
 themeBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
 
@@ -44,15 +45,19 @@ themeBtn.addEventListener('click', () => {
 });
 let buttons = document.querySelectorAll(".cart-btn");
 
-buttons.forEach((btn, index) => {
-    btn.addEventListener("click", () => {
+buttons.forEach((btn) => {
+    btn.addEventListener("click", function () {
 
-        let product = btn.parentElement;
+        let product = btn.closest(".product-card");
+
+        let name = product.querySelector("h3").textContent.trim();
+        let price = product.querySelector(".new").textContent.trim();
+        let image = product.querySelector("img").src;
 
         let item = {
-            name: product.querySelector("h2").innerText,
-            price: product.querySelector(".product-price").innerText,
-            image: product.querySelector("img").src
+            name: name,
+            price: price,
+            image: image
         };
 
         let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -61,6 +66,6 @@ buttons.forEach((btn, index) => {
 
         localStorage.setItem("cart", JSON.stringify(cart));
 
-        alert("Added to cart!");
+        alert("Added to cart ");
     });
 });
