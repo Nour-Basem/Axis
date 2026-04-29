@@ -32,18 +32,24 @@ let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 let container = document.getElementById("cart-items");
 
-if (cart.length === 0) {
-    container.innerHTML = "<p>Cart is empty </p>";
-} else {
-    cart.forEach(item => {
+function displayCart() {
+    container.innerHTML = "";
+
+    if (cart.length === 0) {
+        container.innerHTML = "<p>Cart is empty </p>";
+        return;
+    }
+
+    cart.forEach((item, index) => {
         let div = document.createElement("div");
 
         div.innerHTML = `
-            <div style="display:flex; align-items:center; gap:15px; margin-bottom:20px;">
-                <img src="${item.image}" width="100">
+            <div class="cart-item">
+                <img src="${item.image}" class="cart-img">
                 <div>
                     <h3>${item.name}</h3>
                     <p>${item.price}</p>
+                    <button onclick="removeItem(${index})" class="remove-btn">Remove</button>
                 </div>
             </div>
             <hr>
@@ -52,3 +58,11 @@ if (cart.length === 0) {
         container.appendChild(div);
     });
 }
+
+function removeItem(index) {
+    cart.splice(index, 1);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    displayCart();
+}
+
+displayCart();

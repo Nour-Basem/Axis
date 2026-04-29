@@ -1,13 +1,13 @@
 const allimages = document.querySelectorAll('.skin-img');
-allimages.forEach(img=>{
-    img.onclick=function(){
+allimages.forEach(img => {
+    img.onclick = function () {
         const parent = this.parentElement;
-        const desc =parent.querySelector('.description');
-        if(desc.style.display==="none"||desc.style.display===""){
-            desc.style.display="block";
+        const desc = parent.querySelector('.description');
+        if (desc.style.display === "none" || desc.style.display === "") {
+            desc.style.display = "block";
         }
-        else{
-            desc.style.display="none";
+        else {
+            desc.style.display = "none";
         }
     }
 }
@@ -42,4 +42,25 @@ themeBtn.addEventListener('click', () => {
 
     localStorage.setItem('theme', theme);
 });
+let buttons = document.querySelectorAll(".cart-btn");
 
+buttons.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+
+        let product = btn.parentElement;
+
+        let item = {
+            name: product.querySelector("h2").innerText,
+            price: product.querySelector(".product-price").innerText,
+            image: product.querySelector("img").src
+        };
+
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        cart.push(item);
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        alert("Added to cart!");
+    });
+});
