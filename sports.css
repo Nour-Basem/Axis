@@ -1,6 +1,12 @@
 h1,p {
     color: rgb(6, 16, 51);
 }
+p{
+    display: block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: sans-serif;
+}
 .old {
     text-decoration: line-through;
     color: rgb(121, 124, 135);
@@ -10,6 +16,7 @@ h1,p {
 .new {
     color: rgb(6, 16, 51);
     font-weight: bold;
+    font-size: 24px;
 }
 .imggg {
     width: 300px;
@@ -262,4 +269,3 @@ nav ul li a:hover {
     outline: none;
     border-color: #000;
 }
-
