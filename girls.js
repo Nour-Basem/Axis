@@ -66,6 +66,6 @@ buttons.forEach((btn) => {
 
         localStorage.setItem("cart", JSON.stringify(cart));
 
-        alert("Added to cart ✅");
+        alert("Added to cart ");
     });
 });

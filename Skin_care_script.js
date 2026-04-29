@@ -1,13 +1,13 @@
 const allimages = document.querySelectorAll('.skin-img');
-allimages.forEach(img=>{
-    img.onclick=function(){
+allimages.forEach(img => {
+    img.onclick = function () {
         const parent = this.parentElement;
-        const desc =parent.querySelector('.description');
-        if(desc.style.display==="none"||desc.style.display===""){
-            desc.style.display="block";
+        const desc = parent.querySelector('.description');
+        if (desc.style.display === "none" || desc.style.display === "") {
+            desc.style.display = "block";
         }
-        else{
-            desc.style.display="none";
+        else {
+            desc.style.display = "none";
         }
     }
 }
@@ -42,4 +42,31 @@ themeBtn.addEventListener('click', () => {
 
     localStorage.setItem('theme', theme);
 });
+let buttons = document.querySelectorAll(".cart-btn");
+
+buttons.forEach((btn) => {
+    btn.addEventListener("click", function () {
+
+        let product = btn.closest(".images");
+
+        let name = product.querySelector("h3,h2").innerText;
+        let price = product.querySelector(".new").innerText;
+        let image = product.querySelector("img").src;
+
+        let item = {
+            name: name,
+            price: price,
+            image: image
+        };
+
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        cart.push(item);
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        alert("Added to cart");
+    });
+});
+
 
