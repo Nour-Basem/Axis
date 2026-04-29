@@ -44,19 +44,15 @@ themeBtn.addEventListener('click', () => {
 });
 let buttons = document.querySelectorAll(".cart-btn");
 
-buttons.forEach((btn) => {
-    btn.addEventListener("click", function () {
+buttons.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
 
-        let product = btn.closest(".images");
-
-        let name = product.querySelector("h3,h2").innerText;
-        let price = product.querySelector(".new").innerText;
-        let image = product.querySelector("img").src;
+        let product = btn.parentElement;
 
         let item = {
-            name: name,
-            price: price,
-            image: image
+            name: product.querySelector("h2").innerText,
+            price: product.querySelector(".product-price").innerText,
+            image: product.querySelector("img").src
         };
 
         let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -65,8 +61,6 @@ buttons.forEach((btn) => {
 
         localStorage.setItem("cart", JSON.stringify(cart));
 
-        alert("Added to cart");
+        alert("Added to cart!");
     });
 });
-
-
