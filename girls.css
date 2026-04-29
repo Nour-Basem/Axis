@@ -18,6 +18,11 @@
     --bg-main: #C6C4BE;
     --text-navy: #061033;
     --nav-border: #2C344F;
+    --card-bg: #ECE8DA;
+    --card-text: #061033;
+    --price-new: #061033;
+    --footer-bg: #061033;
+    --footer-text: #ECE8DA;
 }
 
 body {
@@ -212,6 +217,8 @@ nav ul li a:hover {
     color: var(--nav-text);
     font-size: 20px;
     transition: all 0.3s ease;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s ease;
+
 }
 
 .theme-toggle i:hover {
@@ -222,18 +229,20 @@ nav ul li a:hover {
 body.dark-mode {
     --nav-bg: #ECE8DA;
     --nav-text: #061033;
-
     --bg-main: #061033;
-    --text-color: #ECE8DA;
-
+    --text-navy: #ECE8DA;
     --card-bg: #1b2440;
     --card-border: #3b4a6b;
-
+    --card-text: #ECE8DA;
     --btn-bg: #ECE8DA;
     --btn-text: #061033;
+    --price-new: #ffffff;
+    --footer-bg: #ECE8DA;
+    --footer-text: #061033;
+}
 
-    --footer-bg: #000814;
-
+body.dark-mode .theme-toggle i {
+    transform: rotate(360deg) scale(1.2);
 }
 
 .products {
@@ -246,8 +255,9 @@ body.dark-mode {
 
 .product-card {
     width: 250px;
-    background-color: #ECE8DA;
-    border: 1px solid #C6C4BE;
+    background-color: var(--card-bg);
+    color: var(--card-text);
+    border: 1px solid var(--accent-blue);
     padding: 20px;
     text-align: center;
     border-radius: 12px;
@@ -277,7 +287,7 @@ body.dark-mode {
 }
 
 .new {
-    color: rgb(6, 16, 51);
+    color: var(--price-new);
     font-weight: bold;
 }
 
@@ -320,10 +330,11 @@ body.dark-mode {
 }
 
 .main-footer {
-    background-color: var(--primary-navy);
-    color: var(--light-beige);
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
     padding: 10px 0 5px;
     margin-top: 50px;
+    transition: background-color 0.3s ease, color 0.4s ease;
 }
 
 .footer-container {
@@ -343,8 +354,8 @@ body.dark-mode {
 
 .footer-section h3 {
     margin-bottom: 20px;
-    color: #fff;
-    border-bottom: 2px solid var(--primary-navy);
+    color: var(--footer-text) !important;
+    border-bottom: 2px solid var(--footer-text);
     display: inline-block;
 }
 
@@ -358,7 +369,7 @@ body.dark-mode {
 }
 
 .footer-section a {
-    color: var(--light-beige);
+    color: var(--footer-text);
     text-decoration: none;
     transition: 0.3s;
 }
