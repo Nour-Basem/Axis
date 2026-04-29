@@ -138,7 +138,7 @@ nav ul li a:hover {
 
 .dropdown-content li a:hover {
     background-color: rgba(6, 16, 51, 0.05);
-    color: var(--nav-text);
+    color: var(--primary-navy);
 }
 
 .dropdown a i {
