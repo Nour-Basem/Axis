@@ -28,3 +28,41 @@ themeBtn.addEventListener('click', () => {
 
     localStorage.setItem('theme', theme);
 });
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+let container = document.getElementById("cart-items");
+
+function displayCart() {
+    container.innerHTML = "";
+
+    if (cart.length === 0) {
+        container.innerHTML = "<p>Cart is empty </p>";
+        return;
+    }
+
+    cart.forEach((item, index) => {
+        let div = document.createElement("div");
+
+        div.innerHTML = `
+            <div class="cart-item">
+                <img src="${item.image}" class="cart-img">
+                <div>
+                    <h3>${item.name}</h3>
+                    <p>${item.price}</p>
+                    <button onclick="removeItem(${index})" class="remove-btn">Remove</button>
+                </div>
+            </div>
+            <hr>
+        `;
+
+        container.appendChild(div);
+    });
+}
+
+function removeItem(index) {
+    cart.splice(index, 1);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    displayCart();
+}
+
+displayCart();

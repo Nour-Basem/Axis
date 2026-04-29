@@ -108,7 +108,7 @@ nav ul li a:hover {
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: var(--nav-bg);
+    background-color: var(--bg-main);
     min-width: 180px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     z-index: 10000;
@@ -124,10 +124,11 @@ nav ul li a:hover {
 .dropdown:hover .dropdown-content {
     display: block;
     animation: fadeInUp 0.3s ease;
+    color: var(--primary-navy);
 }
 
 .dropdown-content li a {
-    color: var(--nav-text) !important;
+    color: var(--text-navy) !important;
     padding: 10px 20px;
     text-decoration: none;
     display: block;
@@ -138,7 +139,7 @@ nav ul li a:hover {
 
 .dropdown-content li a:hover {
     background-color: rgba(6, 16, 51, 0.05);
-    color: var(--nav-text);
+    color: var(--primary-navy);
 }
 
 .dropdown a i {
