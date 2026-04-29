@@ -23,6 +23,13 @@ body {
     background-color: var(--bg-main);
     color: var(--text-navy);
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+main {
+    flex: 1;
 }
 
 .logo-photo {
