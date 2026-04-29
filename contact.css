@@ -10,17 +10,28 @@
     --light-beige: #ECE8DA;
     --secondary-gray: #666;
     --accent-blue: #2C344F;
-    --nav-bg: var(--primary-navy);
-    --nav-text: var(--light-beige);
+    --nav-bg: #061033;
+    --nav-text: #ece8da;
     --nav-hover: var(--secondary-gray);
     --bg-main: #C6C4BE; 
     --text-navy: #061033;
     --nav-border: #2C344F;
+    --card-bg: #ECE8DA;
+    --card-text: #061033;
+    --cart-btn-bg: #061033;
+    --cart-btn-icon: #ECE8DA;
+    --price-new: #061033;
+    --footer-bg: #061033;
+    --footer-text: #ECE8DA;
+
 }
 body {
     background-color: var(--bg-main);
     color: var(--text-navy);
     min-height: 100vh;
+}
+.categories{
+    background-color: transparent;
 }
 
 .logo-photo{
@@ -102,6 +113,7 @@ nav ul li a:hover {
 .dropdown:hover .dropdown-content {
     display: block; 
    animation: fadeInUp 0.3s ease;
+   color: var(--primary-navy);
 }
 
 .dropdown-content li a {
@@ -221,3 +233,139 @@ tbody tr:hover{
     background:#eef2ff;
 }
 
+.main-footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 10px 0 5px;
+    margin-top: 50px;
+    transition: background-color 0.3s ease, color 0.4s ease;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    color: var(--footer-text);
+    border-bottom: none;
+    display: inline-block;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: var(--footer-text);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section a:hover {
+    color: #fff;
+    padding-left: 5px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+}
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 15px;
+    position: relative;
+    margin-left: 20px;
+}
+
+.theme-toggle i {
+    color: var(--nav-text);
+    font-size: 20px;
+    transition: all 0.3s ease;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s ease;
+
+}
+
+.theme-toggle i:hover {
+    color: #666;
+    transform: scale(1.2) rotate(15deg);
+}
+
+body.dark-mode {
+    --nav-bg: #ECE8DA;
+    --nav-text: #061033;
+    --bg-main: #061033;
+    --text-navy: #ECE8DA;
+    --card-bg: #1b2440;
+    --card-border: #3b4a6b;
+    --card-text: #ECE8DA;
+    --btn-bg: #ECE8DA;
+    --btn-text: #061033;
+    --price-new: #ffffff;
+    --footer-bg: #ECE8DA;
+    --footer-text: #061033;
+    --cart-btn-bg: #061033;
+    --cart-btn-icon: #ECE8DA;
+}
+
+body.dark-mode .dropdown-content a {
+    color: #ECE8DA;
+}
+
+body.dark-mode .theme-toggle i {
+    transform: rotate(360deg) scale(1.2);
+}
+.dark-mode table {
+    filter: none !important; /* بنلغي أي عكس ألوان على الجدول */
+    
+    color: #2C344F !important; /* بنخلي الخط كحلي عشان يبان */
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* بنضمن إن كل الخلايا والصفوف ترجع فاتحة */
+.dark-mode th, 
+.dark-mode td, 
+.dark-mode tr {
+    
+    color: #2C344F !important;
+    border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+}
+
+/* الرأس بتاع الجدول (اللون الكحلي) */
+.dark-mode th {
+    background-color: #2C344F !important;
+    color: white !important;
+}
+
+/* العنوان الكبير نرجعه للونه الصح */
+.dark-mode h1 {
+    filter: none !important;
+    color: #ECE8DA !important; /* خليه فاتح عشان يليق مع الخلفية الغامقة */
+}
