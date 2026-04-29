@@ -32,7 +32,8 @@ body {
     min-height: 100vh;
     margin: 0;
 }
-.categories{
+
+.categories {
     background-color: transparent;
 }
 
@@ -203,7 +204,8 @@ nav ul li a:hover {
     outline: none;
     border-color: #000;
 }
-h1{
+
+h1 {
     text-align: center;
     margin-top: 16px;
 }
@@ -294,11 +296,11 @@ h1{
 }
 
 .main-footer {
-    background-color: var(--footer-bg); 
+    background-color: var(--footer-bg);
     color: var(--footer-text);
     padding: 10px 0 5px;
     margin-top: 50px;
-    transition: background-color 0.3s ease,color 0.4s ease;
+    transition: background-color 0.3s ease, color 0.4s ease;
 }
 
 .footer-container {
@@ -318,8 +320,8 @@ h1{
 
 .footer-section h3 {
     margin-bottom: 20px;
-    color:var(--footer-text);
-    border-bottom: 2px solid var(--footer-text);
+    color: var(--footer-text);
+    border-bottom: none;
     display: inline-block;
 }
 
@@ -352,9 +354,10 @@ h1{
     text-align: center;
     margin-top: 15px;
     padding-top: 10px;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 14px;
 }
+
 .theme-toggle {
     display: flex;
     align-items: center;

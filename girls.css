@@ -365,7 +365,7 @@ body.dark-mode .theme-toggle i {
 .footer-section h3 {
     margin-bottom: 20px;
     color: var(--footer-text) !important;
-    border-bottom: 2px solid var(--footer-text);
+    border-bottom: none;
     display: inline-block;
 }
 

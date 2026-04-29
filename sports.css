@@ -1,14 +1,17 @@
-h1,h2{
+h1,
+h2 {
     margin: 25px;
     color: rgb(6, 16, 51);
 }
-p{
+
+p {
     display: block;
     white-space: pre-wrap;
     word-wrap: break-word;
     color: rgb(6, 16, 51);
     font-family: sans-serif;
 }
+
 .old {
     text-decoration: line-through;
     color: rgb(121, 124, 135);
@@ -20,6 +23,7 @@ p{
     font-weight: bold;
     font-size: 24px;
 }
+
 .imggg {
     width: 300px;
     height: 300px;
@@ -34,12 +38,13 @@ p{
     border-radius: 10px;
     vertical-align: top;
 }
-section{
+
+section {
     text-align: center;
     width: 350px;
     height: 500px;
     background-color: #ECE8DA;
-    border: 1px solid #C6C4BE; 
+    border: 1px solid #C6C4BE;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -47,6 +52,7 @@ section{
     margin: 20px;
     border: 1px solid #f5f5f5;
 }
+
 .cart-btn {
     display: flex;
     align-items: center;
@@ -76,6 +82,7 @@ section{
 .cart-btn:hover {
     background-color: rgb(224, 224, 224);
 }
+
 main {
     display: flex;
     flex-wrap: wrap;
@@ -83,9 +90,11 @@ main {
     justify-content: center;
     padding: 50px;
 }
+
 img:hover {
     transform: scale(1.1);
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -113,8 +122,10 @@ body {
     min-height: 100vh;
     margin: 0;
 }
-.hero, .categories {
-    background-color: transparent; 
+
+.hero,
+.categories {
+    background-color: transparent;
 }
 
 .logo-photo {
@@ -284,12 +295,14 @@ nav ul li a:hover {
     outline: none;
     border-color: #000;
 }
+
 .main-footer {
-    background-color: var(--primary-navy); 
+    background-color: var(--primary-navy);
     color: var(--light-beige);
     padding: 10px 0 5px;
     margin-top: 50px;
 }
+
 .footer-container {
     display: flex;
     justify-content: space-around;
@@ -344,10 +357,13 @@ nav ul li a:hover {
     border-top: 1px solid #000;
     font-size: 14px;
 }
-.footer-bottom p,.footer-section p{
+
+.footer-bottom p,
+.footer-section p {
     color: var(--light-beige);
 }
-.footer-section h2{
+
+.footer-section h2 {
     text-align: left;
     color: var(--light-beige);
 }

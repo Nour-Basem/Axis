@@ -29,7 +29,7 @@ themeBtn.addEventListener('click', () => {
 
     localStorage.setItem('theme', theme);
 });
-let buttons = document.querySelectorAll(".cart-btn");
+let buttons = document.querySelectorAll(".add-to-cart");
 
 buttons.forEach((btn) => {
     btn.addEventListener("click", function () {
@@ -37,7 +37,7 @@ buttons.forEach((btn) => {
         let product = btn.closest(".product-card");
 
         let name = product.querySelector("h3").textContent.trim();
-        let price = product.querySelector(".new").textContent.trim();
+        let price = product.querySelector(".new-price").textContent.trim();
         let image = product.querySelector("img").src;
 
         let item = {
