@@ -274,8 +274,9 @@ nav {
 }
 
 .product-card {
-    background-color: #ECE8DA;
-    border: 1px solid #C6C4BE;
+    background-color: var(--card-bg);
+    color: var(--card-text);
+    border: 1px solid var(--accent-blue);
     border-radius: 12px;
     padding: 20px;
     text-align: center;
@@ -299,11 +300,11 @@ nav {
 .product-info h3 {
     font-size: 21px;
     margin: 10px 0;
-    color: #061033;
+    color: var(--card-text);
 }
 
 .new-price {
-    color: #53586B;
+    color: var(--price-new);
     font-weight: bold;
     font-size: 18px;
 }
@@ -316,8 +317,8 @@ nav {
 }
 
 .add-to-cart {
-    background-color: var(--cart-btn-bg);
-    color: var(--cart-btn-icon);
+    background-color: var(--cart-btn-bg) !important;
+    color: var(--cart-btn-icon) !important;
     border: none;
     padding: 12px 20px;
     margin: 15px auto 0;
