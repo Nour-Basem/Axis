@@ -66,3 +66,10 @@ function removeItem(index) {
 }
 
 displayCart();
+let clearBtn = document.getElementById("clear-cart");
+
+clearBtn.addEventListener("click", () => {
+    cart = [];
+    localStorage.setItem("cart", JSON.stringify(cart)); // امسح من التخزين
+    displayCart();
+});
