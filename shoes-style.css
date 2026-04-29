@@ -221,5 +221,363 @@ nav ul li a:hover {
 }
 
 .search-input {
-    position: absolut;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    transition: all 0.4s ease;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+
+.search:hover .search-input {
+    opacity: 1;
+    visibility: visible;
+    width: 180px;
+}
+
+.icons input:focus {
+    display: block;
+    outline: none;
+    border-color: #000;
+}
+
+
+
+h1 {
+    text-align: center;
+    padding: 40px 0 20px;
+    color: var(--text-navy);
+    font-size: 32px;
+}
+
+.shoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px 4%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.shoes-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.shoes-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.shoes-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.price-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.old {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 13px;
+}
+
+.new {
+    font-weight: bold;
+    color: var(--text-navy);
+    font-size: 16px;
+}
+
+.cart-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 15px;
+    background-color: var(--cart-btn-bg) !important;
+    color: var(--cart-btn-icon) !important;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: fit-content;
+    margin: 15px auto 0;
+    transition: all 0.3s ease;
+
+}
+
+.cart-text {
+    display: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cart-btn:hover .cart-text {
+    display: inline;
+}
+
+.cart-btn:hover {
+    background-color: #061033;
+}
+
+
+.main-footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 10px 0 5px;
+    margin-top: 50px;
+    transition: background-color 0.3s ease, color 0.4s ease;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    color: var(--footer-text) !important;
+    border-bottom: none;
+    display: inline-block;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: var(--footer-text);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section a:hover {
+    color: #fff;
+    padding-left: 5px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    transition: all 0.4s ease;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+
+.search:hover .search-input {
+    opacity: 1;
+    visibility: visible;
+    width: 180px;
+}
+
+.icons input:focus {
+    display: block;
+    outline: none;
+    border-color: #000;
+}
+
+
+
+h1 {
+    text-align: center;
+    padding: 40px 0 20px;
+    color: var(--text-navy);
+    font-size: 32px;
+}
+
+.shoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px 4%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.shoes-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    padding: 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.shoes-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.shoes-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.price-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.old {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 13px;
+}
+
+.new {
+    font-weight: bold;
+    color: var(--text-navy);
+    font-size: 16px;
+}
+
+.cart-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 15px;
+    background-color: var(--cart-btn-bg) !important;
+    color: var(--cart-btn-icon) !important;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: fit-content;
+    margin: 15px auto 0;
+    transition: all 0.3s ease;
+
+}
+
+.cart-text {
+    display: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cart-btn:hover .cart-text {
+    display: inline;
+}
+
+.cart-btn:hover {
+    background-color: #061033;
+}
+
+
+.main-footer {
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 10px 0 5px;
+    margin-top: 50px;
+    transition: background-color 0.3s ease, color 0.4s ease;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    color: var(--footer-text) !important;
+    border-bottom: none;
+    display: inline-block;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: var(--footer-text);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section a:hover {
+    color: #fff;
+    padding-left: 5px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
 }
