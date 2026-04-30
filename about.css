@@ -288,7 +288,9 @@ body.dark-mode .theme-toggle i {
     background-color: var(--accent-blue);
     transform: scale(1.05);
 }
- 
+ video::-webkit-media-controls {
+    display: none !important;
+}
 .main-footer {
     background-color: var(--footer-bg);
     color: var(--footer-text);
