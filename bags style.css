@@ -195,14 +195,15 @@ nav ul li a:hover {
 
 
 body {
-    background-color: #c6c4be;
+    background-color: var(--bg-main);
 }
 
 h1 {
-    color: #061033;
+    color: var(--card-text);
     text-align: center;
     margin-top: 16px;
     margin-bottom: 0px;
+    
 }
 
 .sizephoto {
@@ -217,8 +218,9 @@ h1 {
 .product-card {
     width: 350px;
     height: 500px;
-    background-color: #ECE8DA;
-    border: 1px solid #C6C4BE; 
+    background-color: var(--card-bg);
+    color: var(--card-text);
+    border: 1px solid var(--card-bg);
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -241,11 +243,12 @@ h1 {
 h3 {
     font-size: 1.1rem;
     margin-bottom: 5px;
-    color: #061033;
+    color:var(--card-text);
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: 4px;
+    
 }
 
 
@@ -262,6 +265,7 @@ h3 {
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
+    color: var(--price-new);
 
 
 }
@@ -287,8 +291,8 @@ h3 {
     align-items: center;
     gap: 10px;
     padding: 10px 15px;
-    color: rgb(6, 16, 51);
-    background-color: rgb(240, 240, 240);
+    background-color: var(--cart-btn-bg) ;
+    color: var(--cart-btn-icon);
     border: 1px solid rgb(204, 204, 204);
     border-radius: 5px;
     cursor: pointer;
@@ -311,13 +315,12 @@ h3 {
 }
 
 
-
-
 .main-footer {
-    background-color: var(--primary-navy); 
-    color: var(--light-beige);
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
     padding: 10px 0 5px;
     margin-top: 50px;
+    transition: background-color 0.3s ease, color 0.4s ease;
 }
 
 .footer-container {
@@ -337,8 +340,8 @@ h3 {
 
 .footer-section h3 {
     margin-bottom: 20px;
-    color: #fff;
-    border-bottom: 2px solid var(--primary-navy);
+    color: var(--footer-text);
+    border-bottom: none;
     display: inline-block;
 }
 
@@ -352,7 +355,7 @@ h3 {
 }
 
 .footer-section a {
-    color: var(--light-beige);
+    color: var(--footer-text);
     text-decoration: none;
     transition: 0.3s;
 }
@@ -371,9 +374,65 @@ h3 {
     text-align: center;
     margin-top: 15px;
     padding-top: 10px;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 14px;
 }
+
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 15px;
+    position: relative;
+    margin-left: 20px;
+}
+
+.theme-toggle i {
+    color: var(--nav-text);
+    font-size: 20px;
+    transition: all 0.3s ease;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s ease;
+
+}
+
+.theme-toggle i:hover {
+    color: #666;
+    transform: scale(1.2) rotate(15deg);
+}
+
+body.dark-mode {
+    --nav-bg: #ECE8DA;
+    --nav-text: #061033;
+    --bg-main: #061033;
+    --text-navy: #ECE8DA;
+    --card-bg: #1b2440;
+    --card-border: #3b4a6b;
+    --card-text: #ECE8DA;
+    --btn-bg: #ECE8DA;
+    --btn-text: #061033;
+    --price-new: #ffffff;
+    --footer-bg: #ECE8DA;
+    --footer-text: #061033;
+    --cart-btn-bg: #061033;
+    --cart-btn-icon: #ECE8DA;
+    
+}
+
+body.dark-mode .dropdown-content a {
+    color:#ECE8DA;
+}
+
+body.dark-mode .theme-toggle i {
+    transform: rotate(360deg) scale(1.2);
+}
+
+
+
+.hide {display: none;}
+
+.noResult  { display: none;  }
+
 
 
 
