@@ -1,3 +1,22 @@
+let images = document.querySelectorAll(".imggg");
+
+images.forEach(function (img) {
+    img.addEventListener("click", function () {
+
+        let description = this.parentElement.querySelector("p");
+
+        if (description.style.display === "none" || description.style.display === "") {
+            description.style.display = "block";
+        } else {
+            description.style.display = "none";
+        }
+    });
+});
+
+
+
+
+
 let buttons = document.querySelectorAll(".cart-btn");
 
 buttons.forEach((btn) => {

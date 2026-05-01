@@ -243,6 +243,7 @@ body.dark-mode {
     --footer-text: #061033;
     --cart-btn-bg: #061033;
     --cart-btn-icon: #ECE8DA;
+
 }
 
 body.dark-mode .dropdown-content a {
@@ -293,15 +294,9 @@ section:hover{
     color: var(--price-new);
     font-weight: bold;
 }
-p {
-    display:none ;
+section p{
+    display: none;
 }
-h1,
-h2 {
-    margin: 25px;
-    color: var(--nav-bg);
-}
-
 .cart-btn {
     display: flex;
     align-items: center;
@@ -400,16 +395,15 @@ h2 {
     font-size: 14px;
 }
 
-.footer-bottom p,
-.footer-section p {
-    color: var(--light-beige);
-}
-
 .footer-section h2 {
     text-align: left;
-    color: var(--light-beige);
+    color: var(--light-beige) ;
 }
-
-
+h1,h2{
+    color: var(--btn-bg) !important ;
+}
+.footer-section h2{
+    color: var(--btn-text) !important ;
+}
 
 
