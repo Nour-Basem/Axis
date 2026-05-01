@@ -7,7 +7,7 @@
 
  :root {
      --primary-navy: #061033;
-     --light-beige: #ECE8DA;
+     --light-beige:  #ECE8DA;
      --secondary-gray: #666;
      --accent-blue: #2C344F;
      --nav-bg: #061033;
@@ -16,7 +16,7 @@
      --bg-main: #C6C4BE;
      --text-navy: #061033;
      --nav-border: #2C344F;
-     --card-bg: #ECE8DA;
+     --card-bg:#dad8d2 ;
      --card-text: #061033;
      --cart-btn-bg: #061033;
      --cart-btn-icon: #ECE8DA;
@@ -205,7 +205,7 @@
  }
 
  body.dark-mode {
-     --nav-bg: #ECE8DA;
+     --nav-bg: #C6C4BE;
      --nav-text: #061033;
      --bg-main: #061033;
      --text-navy: #ECE8DA;
@@ -215,14 +215,14 @@
      --btn-bg: #ECE8DA;
      --btn-text: #061033;
      --price-new: #ffffff;
-     --footer-bg: #ECE8DA;
+     --footer-bg: #C6C4BE;
      --footer-text: #061033;
      --cart-btn-bg: #061033;
      --cart-btn-icon: #ECE8DA;
  }
 
  body.dark-mode .dropdown-content a {
-     color: #ECE8DA;
+     color:  #ECE8DA;
  }
 
  body.dark-mode .theme-toggle i {
@@ -238,7 +238,7 @@
  .about-container {
      max-width: 800px;
      margin: 0 auto;
-     background: var(--light-beige);
+     background: var(--card-bg);
      padding: 40px;
      border-radius: 20px;
      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -246,12 +246,12 @@
  }
 
  .about-container h1 {
-     color: var(--primary-navy);
+     color: var(--card-text);
      margin-bottom: 20px;
  }
 
  .about-container p {
-     color: var(--accent-blue);
+     color: var(--card-text);
      line-height: 1.8;
  }
 
@@ -266,7 +266,7 @@
  .feature-box {
      flex: 1;
      min-width: 200px;
-     background: #fff;
+     background:white;
      padding: 20px;
      border-radius: 15px;
      border: 1px solid var(--nav-border);
@@ -274,9 +274,11 @@
  }
 
  .feature-box h3 {
-     color: var(--primary-navy);
+     color: #061033;
  }
-
+.feature-box p{
+      color: #061033;
+}
  .back-btn {
      display: inline-block;
      margin-top: 30px;
