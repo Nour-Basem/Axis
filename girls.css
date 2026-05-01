@@ -257,13 +257,13 @@ body.dark-mode .theme-toggle i {
 .products {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-between;
-    padding: 40px 20px;
+    gap: 40px;
+    justify-content: center;
+    padding: 50px;
 }
 
 .product-card {
-    width: 250px;
+    width: 300px;
     background-color: var(--card-bg);
     color: var(--card-text);
     border: 1px solid var(--accent-blue);
