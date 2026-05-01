@@ -172,25 +172,23 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
 }
-
 .search-input {
     position: absolute;
-    right: 30px;
+    right: 30px;  
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); 
     opacity: 0;
     visibility: hidden;
     width: 0;
     transition: all 0.4s ease;
     padding: 5px 10px;
     border: 1px solid #000;
-    border-radius: 20px;
+    border-radius: 20px; 
 }
-
 .search:hover .search-input {
     opacity: 1;
     visibility: visible;
-    width: 180px;
+    width: 180px; 
 }
 
 .icons input:focus {
@@ -198,7 +196,6 @@ nav ul li a:hover {
     outline: none;
     border-color: #000;
 }
-
 .hero {
     display: flex;
     align-items: center;
