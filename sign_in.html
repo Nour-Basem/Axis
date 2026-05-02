@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="sign-in.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-   <title> Sign In</title>
+    <title> Sign In</title>
 </head>
 
 <body>
@@ -42,7 +42,7 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
                 </div>
-                 <div class="theme-toggle" id="themetoggle">
+                <div class="theme-toggle" id="themetoggle">
                     <i class="fa-solid fa-moon" id="themeicon"></i>
 
 
@@ -58,17 +58,17 @@
     </header>
     <section>
         <div class="photo">
-    <img src="sign_in/dark.jpg" alt="Axis" class="image">
-    <br>
-        <h2>Axis.</h2>
+            <img src="sign_in/dark.jpg" alt="Axis" class="image">
+            <br>
+            <h2>Axis.</h2>
             <p>Where style meets value.</p>
-    </div>
+        </div>
         <div class="form">
-                       <div class="header">          
-    <h2 class="title">Step into <span>Axis</span></h2>
-    <p class="subtitle">Unlock the <strong>Axis</strong> world .Your wardrobe is waiting </p>
-     </div>
-           <form class="login">
+            <div class="header">
+                <h2 class="title">Step into <span>Axis</span></h2>
+                <p class="subtitle">Unlock the <strong>Axis</strong> world .Your wardrobe is waiting </p>
+            </div>
+            <form class="login">
                 <div class="input">
                     <label> <i class="fa-solid fa-envelope"></i> Email Address</label>
                     <input type="email" placeholder="name@example.com" required>
@@ -76,32 +76,33 @@
                 <div class="input">
                     <label> <i class="fa-solid fa-key"></i> Password</label>
                     <div class="password-box">
-                    <input type="password" id="password" placeholder="******" required>
+                        <input type="password" id="password" placeholder="******" required>
                         <i class="fa-solid fa-eye" id="togglePassword"></i>
                     </div>
                     <a href="#" class="forgot">Forgot Password?</a>
                 </div>
                 <script>
-const toggle = document.getElementById("togglePassword");
-const password = document.getElementById("password");
+                    const toggle = document.getElementById("togglePassword");
+                    const password = document.getElementById("password");
 
-toggle.addEventListener("click", function () {
-  const type = password.type === "password" ? "text" : "password";
-  password.type = type;
+                    toggle.addEventListener("click", function () {
+                        const type = password.type === "password" ? "text" : "password";
+                        password.type = type;
 
-  this.classList.toggle("fa-eye-slash");
-});
-</script>
+                        this.classList.toggle("fa-eye-slash");
+                    });
+                </script>
                 <button type="submit" class="btn">Unlock Now</button>
-        <div class="separator">
-            <span>OR</span>
-        </div> 
-            <button class="google"><i class="fab fa-google"></i> Continue with Google</button>
-        </form>
+                <div class="separator">
+                    <span>OR</span>
+                </div>
+                <button class="google"><i class="fab fa-google"></i> Continue with Google</button>
+            </form>
         </div>
     </section>
-    </body>
-    <footer class="main-footer">
+    <script src="sign-in.js"></script>
+</body>
+<footer class="main-footer">
     <div class="footer-container">
         <div class="footer-section about">
             <h2 class="logo-text">Axis</h2>
@@ -126,7 +127,7 @@ toggle.addEventListener("click", function () {
             </div>
         </div>
     </div>
-    
+
     <div class="footer-bottom">
         <p>&copy; 2026 Axis Store | Designed by Axis team</p>
     </div>
