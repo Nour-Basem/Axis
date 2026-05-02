@@ -318,7 +318,7 @@ tbody tr:hover{
 }
 
 body.dark-mode {
-    --nav-bg: #ECE8DA;
+    --nav-bg:  #C6C4BE;
     --nav-text: #061033;
     --bg-main: #061033;
     --text-navy: #ECE8DA;
@@ -328,7 +328,7 @@ body.dark-mode {
     --btn-bg: #ECE8DA;
     --btn-text: #061033;
     --price-new: #ffffff;
-    --footer-bg: #ECE8DA;
+    --footer-bg:  #C6C4BE;
     --footer-text: #061033;
     --cart-btn-bg: #061033;
     --cart-btn-icon: #ECE8DA;
