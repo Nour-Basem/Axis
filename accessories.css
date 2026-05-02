@@ -206,6 +206,7 @@ nav ul li a:hover {
     justify-content: space-between;
 
 }
+
 .theme-toggle {
     display: flex;
     align-items: center;
@@ -252,6 +253,7 @@ body.dark-mode .dropdown-content a {
 body.dark-mode .theme-toggle i {
     transform: rotate(360deg) scale(1.2);
 }
+
 .product-card {
     width: 250px;
     border: 1px solid rgb(121, 124, 135);
