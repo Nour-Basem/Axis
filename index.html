@@ -43,24 +43,20 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
                 </div>
+                  <div class="theme-toggle" id="themetoggle">
+                    <i class="fa-solid fa-moon" id="themeicon"></i>
+                </div>
                 <a href="sign_in.html">
                     <i class="fa-regular fa-user"></i>
                 </a>
                 <a href="cart.html">
+                    <div class="cart">
                     <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cart-count">0</span>
+                    </div>
                 </a>
             </div>
-            <div class="theme-switch-wrapper">
-    <div class="theme-switch" id="theme-btn">
-        <div class="switch-option light active">
-            <i class="fas fa-sun"></i>
-        </div>
-        <div class="switch-option dark">
-            <i class="fas fa-moon"></i>
-        </div>
-        <div class="switch-selector"></div>
-    </div>
-</div>
+            
         </nav>
     </header>
 
@@ -128,32 +124,10 @@
         </a>
     </div>
 </section>
-<script>
-    const themeBtn = document.getElementById('theme-btn');
-    const body = document.body;
-    const lightOption = document.querySelector('.switch-option.light');
-    const darkOption = document.querySelector('.switch-option.dark');
 
-    themeBtn.addEventListener('click', () => {
-        body.classList.toggle('dark');
-        lightOption.classList.toggle('active');
-        darkOption.classList.toggle('active');
-        if (body.classList.contains('dark')) {
-            localStorage.setItem('axisTheme', 'dark');
-        } else {
-            localStorage.setItem('axisTheme', 'light');
-        }
-    });
-
-    window.addEventListener('load', () => {
-        const savedTheme = localStorage.getItem('axisTheme');
-        if (savedTheme === 'dark') {
-            body.classList.add('dark');
-            lightOption.classList.remove('active');
-            darkOption.classList.add('active');
-        }
-    });
-</script>
+<script src="home.js"></script>
+</body>
+</html>
 </body>
    <footer class="main-footer">
     <div class="footer-container">

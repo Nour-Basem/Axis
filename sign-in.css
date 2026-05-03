@@ -25,6 +25,7 @@
     --price-new: #061033;
     --footer-bg: #061033;
     --footer-text: #ECE8DA;
+    --form-bg:#ECE8DA;
 }
 
 body {
@@ -247,6 +248,7 @@ body.dark-mode {
     --footer-text: #061033;
     --cart-btn-bg: #061033;
     --cart-btn-icon: #ECE8DA;
+    --form-bg:#d4d1c2;
 }
 
 body.dark-mode .dropdown-content a {
@@ -299,7 +301,7 @@ section {
     max-width: 380px;
     padding: 30px;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.637)
+    background-color: var(--form-bg);
 }
 
 .form .login {
@@ -317,7 +319,7 @@ section {
 
 .title {
     font-size: 34px;
-    color: #0b1a3a;
+    color: var(--text-navy);
     margin-bottom: 10px;
 }
 
@@ -471,8 +473,8 @@ section {
 }
 
 .main-footer {
-    background-color: #061033;
-    color: #ffffff;
+    background-color: var(--footer-bg);
+    color: var(--footer-text);
     padding: 40px 0 20px;
     margin-top: 50px;
 }
@@ -505,7 +507,7 @@ section {
 }
 
 .footer-section p {
-    color: #ffffff;
+    color: var(--footer-text);
     font-size: 15px;
     line-height: 1.6;
 }
@@ -531,7 +533,8 @@ section {
 }
 
 .footer-section a:hover {
-    opacity: 0.7;
+     color: #fff;
+    padding-left: 5px;
 }
 
 .social-icons {
@@ -541,7 +544,7 @@ section {
 }
 
 .social-icons a {
-    color: #ffffff !important;
+    color: var(--footer-text);
     font-size: 22px;
 }
 
@@ -552,5 +555,5 @@ section {
     padding: 20px 20px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 13px;
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--footer-text);
 }

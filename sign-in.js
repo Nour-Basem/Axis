@@ -3,15 +3,19 @@
 
 const themeBtn = document.getElementById('themetoggle');
 const icon = document.getElementById('themeicon');
-
+const image = document.getElementById('mainImage');
 
 const savedTheme = localStorage.getItem('theme');
 
 if (savedTheme === 'dark') {
     document.body.classList.add('dark-mode');
     icon.classList.replace('fa-moon', 'fa-sun');
-
+        image.src = "sign_in/dark.jpg"; 
+} else {
+    image.src = "sign_in/light.jpg"; 
 }
+
+
 
 themeBtn.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
@@ -20,10 +24,11 @@ themeBtn.addEventListener('click', () => {
 
     if (document.body.classList.contains('dark-mode')) {
         icon.classList.replace('fa-moon', 'fa-sun');
-
+          image.src = "sign_in/dark.jpg";
         theme = 'dark';
     } else {
         icon.classList.replace('fa-sun', 'fa-moon');
+        image.src = "sign_in/light.jpg"; 
         icon.style.color = "";
         theme = 'light';
     }
