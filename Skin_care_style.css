@@ -61,7 +61,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: var(--nav-bg);
-    color: var(--nav-text) !important;
+    color: var(--nav-text);
     transition: 0.3s;
     border-bottom: 1px solid var(--accent-blue);
     position: sticky;
@@ -267,8 +267,8 @@ h1 {
     gap: 8px;
 
     padding: 10px 15px;
-    background-color: var(--cart-btn-bg) !important;
-    color: var(--cart-btn-icon) !important;
+    background-color: var(--cart-btn-bg) ;
+    color: var(--cart-btn-icon) ;
 
     border: none;
     border-radius: 6px;
@@ -403,4 +403,7 @@ body.dark-mode .dropdown-content a {
 
 body.dark-mode .theme-toggle i {
     transform: rotate(360deg) scale(1.2);
+}
+.hide {
+    display: none;
 }

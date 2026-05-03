@@ -55,7 +55,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     background-color: var(--nav-bg); 
-    color: var(--nav-text) !important; 
+    color: var(--nav-text) ; 
     transition: 0.3s; 
     border-bottom: 1px solid var(--accent-blue); 
     position: sticky; 
@@ -342,30 +342,24 @@ body.dark-mode .theme-toggle i {
     transform: rotate(360deg) scale(1.2);
 }
 .dark-mode table {
-    filter: none !important; /* بنلغي أي عكس ألوان على الجدول */
-    
-    color: #2C344F !important; /* بنخلي الخط كحلي عشان يبان */
+    filter: none ;
+    color: #2C344F ; 
     border-radius: 15px;
     overflow: hidden;
 }
-
-/* بنضمن إن كل الخلايا والصفوف ترجع فاتحة */
 .dark-mode th, 
 .dark-mode td, 
 .dark-mode tr {
     
-    color: #2C344F !important;
-    border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+    color: #2C344F ;
+    border-bottom: 1px solid rgba(0,0,0,0.1) ;
 }
-
-/* الرأس بتاع الجدول (اللون الكحلي) */
 .dark-mode th {
-    background-color: #2C344F !important;
-    color: white !important;
+    background-color: #2C344F ;
+    color: white ;
 }
 
-/* العنوان الكبير نرجعه للونه الصح */
 .dark-mode h1 {
-    filter: none !important;
-    color: #ECE8DA !important; /* خليه فاتح عشان يليق مع الخلفية الغامقة */
+    filter: none ;
+    color: #ECE8DA ; 
 }

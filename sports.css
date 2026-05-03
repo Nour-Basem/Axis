@@ -407,3 +407,6 @@ h1,h2{
 }
 
 
+.hide {display: none;}
+
+.noResult  { display: none;  }
