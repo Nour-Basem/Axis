@@ -31,3 +31,22 @@ themeBtn.addEventListener('click', () => {
 
     localStorage.setItem('theme', theme);
 });
+function saveData() {
+  let email = document.getElementById("email").value;
+  let remember = document.getElementById("remember").checked;
+
+  if (remember) {
+    localStorage.setItem("userEmail", email);
+  } else {
+    localStorage.removeItem("userEmail");
+  }
+}
+
+window.onload = function () {
+  let savedEmail = localStorage.getItem("userEmail");
+
+  if (savedEmail) {
+    document.getElementById("email").value = savedEmail;
+    document.getElementById("remember").checked = true;
+  }
+};
