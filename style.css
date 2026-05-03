@@ -274,9 +274,7 @@ body.dark-mode .theme-toggle i {
     justify-content: center;
     border: 2px solid #0d1223; 
 }
-#cart-count:empty, #cart-count[data-count="0"] {
-    display: none;
-}
+
 
 .hero {
     display: flex;

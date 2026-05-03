@@ -187,6 +187,34 @@ nav ul li a:hover {
     outline: none;
     border-color: #000;
 }
+.cart{
+    position: relative; 
+    display: inline-block;
+    cursor: pointer;
+}
+
+.cart i {
+    font-size: 24px;
+    color: var(--nav-text); 
+}
+
+#cart-count {
+    position: absolute;
+    top: -8px;      
+    right: -10px;    
+    background-color: var(--light-beige);
+    color: var(--primary-navy);
+    font-size: 11px;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #0d1223; 
+}
+
 h1{
     color: rgb(6, 16, 51);
     text-align: center;
