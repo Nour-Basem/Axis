@@ -162,7 +162,7 @@ nav ul li a:hover {
     text-decoration: none;
     color: var(--nav-text);
     font-size: 20px;
-
+    margin-left: 15px;
     transition: 0.3s;
 }
 

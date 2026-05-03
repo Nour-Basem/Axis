@@ -6,20 +6,24 @@ buttons.forEach((btn) => {
     btn.addEventListener("click", function () {
 
         let product = btn.parentElement;
-
+        let name = product.querySelector("h3").textContent.trim();
         let image = product.querySelector("img")?.src;
         let price = product.querySelector(".new")?.innerText;
 
 
-        let name = "Shoes Product";
+        let item = {
+            name: name,
+            price: price,
+            image: image
+        };
 
-        cart.push({ name, price, image });
+        cart.push(item);
 
         localStorage.setItem("cart", JSON.stringify(cart));
 
         alert("Added to cart ");
     });
-}); 
+});
 
 
 const themeBtn = document.getElementById('themetoggle');
@@ -52,7 +56,7 @@ themeBtn.addEventListener('click', () => {
 
     localStorage.setItem('theme', theme);
 });
- document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     const searchInput = document.querySelector('.search-input');
     const productCards = document.querySelectorAll('.shoes-card');
     const noResult = document.querySelector('noResult');
