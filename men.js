@@ -55,3 +55,26 @@ buttons.forEach((btn) => {
         alert("Added to cart ");
     });
 });
+document.addEventListener('DOMContentLoaded', function () {
+    const searchInput = document.querySelector('.search-input');
+    const noResult = document.querySelector('noResult');
+
+    searchInput.addEventListener('input', function () {
+        const searchTerm = searchInput.value.toLowerCase().trim();
+        
+        const productCards = document.querySelectorAll('.product-card');
+        let foundCount = 0;
+
+        productCards.forEach(function (card) {
+            const productName = card.querySelector('h3').textContent.toLowerCase();
+            if (productName.includes(searchTerm)) {
+                card.classList.remove('hide');
+                foundCount++;
+            } else {
+                card.classList.add('hide');
+            }
+        });
+
+
+    });
+});

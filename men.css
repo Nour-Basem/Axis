@@ -411,3 +411,7 @@ nav {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 14px;
 }
+
+.hide {
+    display: none;
+}
