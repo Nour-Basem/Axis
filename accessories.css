@@ -263,7 +263,7 @@ body.dark-mode .theme-toggle i {
 }
 
 .product-card {
-    width: 300px;
+    width: 320px;
     background-color: var(--card-bg);
     color: var(--card-text);
     border: 1px solid var(--accent-blue);
