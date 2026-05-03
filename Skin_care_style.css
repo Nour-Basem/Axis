@@ -404,3 +404,6 @@ body.dark-mode .dropdown-content a {
 body.dark-mode .theme-toggle i {
     transform: rotate(360deg) scale(1.2);
 }
+.hide {
+    display: none;
+}
