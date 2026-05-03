@@ -309,18 +309,14 @@ body.dark-mode .theme-toggle i {
     align-items: center;
     justify-content: center;
     gap: 8px;
-
     padding: 10px 15px;
     background-color: var(--cart-btn-bg) !important;
     color: var(--cart-btn-icon) !important;
-
     border: none;
     border-radius: 6px;
     cursor: pointer;
-
     width: fit-content;
     margin: 15px auto 0;
-
     transition: all 0.3s ease;
 
 }

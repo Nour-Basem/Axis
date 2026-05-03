@@ -11,8 +11,8 @@
     --light-beige: #ECE8DA;
     --secondary-gray: #666;
     --accent-blue: #2C344F;
-    --nav-bg: var(--primary-navy);
-    --nav-text: var(--light-beige);
+    --nav-bg: #061033;
+    --nav-text: #ECE8DA;
     --nav-hover: var(--secondary-gray);
     --bg-main: #C6C4BE;
     --text-navy: #061033;
@@ -123,7 +123,7 @@ nav ul li a:hover {
 }
 
 .dropdown-content li a {
-    color: var(--primary-navy);
+    color: var(--text-navy);
     padding: 10px 20px;
     text-decoration: none;
     display: block;
@@ -162,7 +162,7 @@ nav ul li a:hover {
     text-decoration: none;
     color: var(--nav-text);
     font-size: 20px;
-    margin-left: 15px;
+
     transition: 0.3s;
 }
 
@@ -200,6 +200,10 @@ nav ul li a:hover {
     display: block;
     outline: none;
     border-color: #000;
+}
+
+.categories {
+    background-color: transparent;
 }
 
 
@@ -263,7 +267,7 @@ body.dark-mode .theme-toggle i {
 }
 
 .product-card {
-    width: 260px;
+    width: 300px;
     background-color: var(--card-bg);
     color: var(--card-text);
     border: 1px solid var(--accent-blue);
@@ -297,8 +301,8 @@ body.dark-mode .theme-toggle i {
     align-items: center;
     gap: 10px;
     padding: 10px 15px;
-    color: rgb(6, 16, 51);
-    background-color: rgb(240, 240, 240);
+    background-color: var(--cart-btn-bg) !important;
+    color: var(--cart-btn-icon) !important;
     border: 1px solid rgb(204, 204, 204);
     border-radius: 5px;
     cursor: pointer;
@@ -338,7 +342,7 @@ body.dark-mode .theme-toggle i {
 }
 
 .new {
-    color: rgb(6, 16, 51);
+    color: var(--price-new);
     font-weight: bold;
 }
 

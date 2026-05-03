@@ -1,10 +1,10 @@
-const themeBtn = document.getElementById('themetoggle'); 
-const icon = document.getElementById('themeicon'); 
+const themeBtn = document.getElementById('themetoggle');
+const icon = document.getElementById('themeicon');
 
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme === 'dark') {
     document.body.classList.add('dark-mode');
-    if(icon) icon.classList.replace('fa-moon', 'fa-sun');
+    if (icon) icon.classList.replace('fa-moon', 'fa-sun');
 }
 
 if (themeBtn) {
@@ -52,3 +52,28 @@ buttons.forEach((btn) => {
         alert("Added to cart: " + name);
     });
 });
+document.addEventListener('DOMContentLoaded', function () {
+    const searchInput = document.querySelector('.search-input');
+    const productCards = document.querySelectorAll('.product-card');
+    const noResult = document.querySelector('noResult');
+
+    searchInput.addEventListener('input', function () {
+        const searchTerm = this.value.toLowerCase().trim();
+        let foundCount = 0;
+
+        productCards.forEach(function (card) {
+            const productName = card.querySelector('h3').textContent.toLowerCase();
+            if (productName.includes(searchTerm)) {
+                card.classList.remove('hide');
+                foundCount++;
+            } else {
+                card.classList.add('hide');
+            }
+        });
+
+
+    });
+});
+
+
+
