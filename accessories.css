@@ -208,7 +208,7 @@ nav ul li a:hover {
 
 .products {
     display: flex;
-    gap: 15px; 
+    gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
@@ -238,7 +238,7 @@ nav ul li a:hover {
 }
 
 body.dark-mode {
-    --nav-bg:  #C6C4BE;
+    --nav-bg: #C6C4BE;
     --nav-text: #061033;
     --bg-main: #061033;
     --text-navy: #ECE8DA;
@@ -263,7 +263,7 @@ body.dark-mode .theme-toggle i {
 }
 
 .product-card {
-    width: 260px; *   
+    width: 260px;
     background-color: var(--card-bg);
     color: var(--card-text);
     border: 1px solid var(--accent-blue);
@@ -341,6 +341,7 @@ body.dark-mode .theme-toggle i {
     color: rgb(6, 16, 51);
     font-weight: bold;
 }
+
 .main-footer {
     background-color: var(--footer-bg);
     color: var(--footer-text);
