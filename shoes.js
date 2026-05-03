@@ -52,4 +52,27 @@ themeBtn.addEventListener('click', () => {
 
     localStorage.setItem('theme', theme);
 });
- 
+ document.addEventListener('DOMContentLoaded', function () {
+    const searchInput = document.querySelector('.search-input');
+    const productCards = document.querySelectorAll('.shoes-card');
+    const noResult = document.querySelector('noResult');
+
+    searchInput.addEventListener('input', function () {
+        const searchTerm = this.value.toLowerCase().trim();
+        let foundCount = 0;
+
+        productCards.forEach(function (card) {
+            const productName = card.querySelector('h3').textContent.toLowerCase();
+            if (productName.includes(searchTerm)) {
+                card.classList.remove('hide');
+                foundCount++;
+            } else {
+                card.classList.add('hide');
+            }
+        });
+
+
+    });
+});
+
+

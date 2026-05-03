@@ -341,7 +341,10 @@ h1 {
 .cart-btn:hover {
     background-color: #061033;
 }
-
+.hide {
+    display: none;
+}
+.noResult{display: none;}
 
 .main-footer {
     background-color: var(--footer-bg);
