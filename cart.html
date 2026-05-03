@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <meta name="description" content="The point where style meets value.">
     <link rel="stylesheet" href="cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
@@ -50,7 +52,10 @@
                     <i class="fa-regular fa-user"></i>
                 </a>
                 <a href="cart.html">
+                   <div class="cart">
                     <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cart-count">0</span>
+                    </div>
                 </a>
             </div>
         </nav>
@@ -66,7 +71,7 @@
 
 
         <div id="cart-items"></div>
-        <button id="clear-cart" class="clear-btn">Remove All</button>
+        <button id="clear-cart" class="clear-btn" onclick="clearCart()"> Remove All</button>
 
 
     </main>
@@ -100,7 +105,7 @@
             <p>&copy; 2026 Axis Store | Designed by Axis team</p>
         </div>
     </footer>
-
+<script src="main.js"></script>
     <script src="cart.js"></script>
 
 </body>
