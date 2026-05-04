@@ -64,7 +64,9 @@ nav {
     color: var(--nav-text) !important;
     transition: 0.3s;
     border-bottom: 1px solid var(--accent-blue);
-    position: sticky;
+    position: fixed;
+    left: 0;
+    width: 100%;
     top: 0;
     z-index: 1000;
     padding: 2px 4%;

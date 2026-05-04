@@ -33,7 +33,6 @@
      min-height: 100vh;
  }
 
- /* Navigation Styles */
  .logo-photo {
      height: 80px;
      width: auto;
@@ -60,7 +59,9 @@
      background-color: var(--nav-bg);
      color: var(--nav-text) !important;
      border-bottom: 1px solid var(--accent-blue);
-     position: sticky;
+     position: fixed;
+    left: 0;
+    width: 100%;
      top: 0;
      z-index: 1000;
      padding: 2px 4%;
