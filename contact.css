@@ -397,3 +397,25 @@ body.dark-mode .theme-toggle i {
     filter: none;
     color: #ECE8DA;
 }
+#logout-btn{
+    background-color: var(--btn-text);
+    color:var(--bg-main);
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+#logout-btn:hover{
+    color: #666;
+}
+.dark-mode #logout-btn{
+    background-color: var(--nav-bg) ;
+    color: var(--cart-btn-bg) ;
+
+}
+.dark-mode #logout-btn:hover{
+    transition: 0.3s;
+    color: #666;
+}

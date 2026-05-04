@@ -61,7 +61,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: var(--nav-bg);
-    color: var(--nav-text);
+    color: var(--nav-text) !important;
     transition: 0.3s;
     border-bottom: 1px solid var(--accent-blue);
     position: sticky;
@@ -435,4 +435,26 @@ body.dark-mode .theme-toggle i {
     align-items: center;
     justify-content: center;
     border: 2px solid #0d1223;
+}
+#logout-btn{
+    background-color: var(--btn-text);
+    color:var(--bg-main);
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+#logout-btn:hover{
+    color: #666;
+}
+.dark-mode #logout-btn{
+    background-color: var(--nav-bg) ;
+    color: var(--cart-btn-bg) ;
+
+}
+.dark-mode #logout-btn:hover{
+    transition: 0.3s;
+    color: #666;
 }

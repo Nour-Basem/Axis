@@ -259,6 +259,7 @@ body.dark-mode .theme-toggle i {
     transform: rotate(360deg) scale(1.2);
 }
 
+
 .cart{
     position: relative; 
     display: inline-block;
@@ -583,4 +584,26 @@ section {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 13px;
     color: var(--footer-text);
+}
+#logout-btn{
+    background-color: var(--btn-text);
+    color:var(--bg-main);
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+#logout-btn:hover{
+    color: #666;
+}
+.dark-mode #logout-btn{
+    background-color: var(--nav-bg) ;
+    color: var(--cart-btn-bg) ;
+
+}
+.dark-mode #logout-btn:hover{
+    transition: 0.3s;
+    color: #666;
 }

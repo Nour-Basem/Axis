@@ -49,10 +49,25 @@ function saveData() {
 }
 
 window.onload = function () {
+  let rememberBox = document.getElementById("remember");
   let savedEmail = localStorage.getItem("userEmail");
-
-  if (savedEmail) {
+  if (savedEmail && rememberBox) {
     document.getElementById("email").value = savedEmail;
-    document.getElementById("remember").checked = true;
+    rememberBox.checked = true;
   }
 };
+function logout(){
+  localStorage.removeItem("userEmail");
+  alert("You are about to log out");
+  window.location.href="sign_in.html";
+}
+window.onload=function(){
+  const logoutBtn = document.getElementById('logout-btn');
+  const userEmail = localStorage.getItem('userEmail');
+  if(!userEmail){
+    logoutBtn.style.display = 'none';
+  }
+  else{
+    logoutBtn.style.display = 'block';
+  };
+}
