@@ -17,7 +17,7 @@
     --bg-main: #C6C4BE;
     --text-navy: #061033;
     --nav-border: #2C344F;
-    --card-bg:#dad8d2;
+    --card-bg: #dad8d2;
     --card-text: #061033;
     --cart-btn-bg: #061033;
     --cart-btn-icon: #ECE8DA;
@@ -229,7 +229,7 @@ nav ul li a:hover {
 }
 
 body.dark-mode {
-    --nav-bg:  #C6C4BE;
+    --nav-bg: #C6C4BE;
     --nav-text: #061033;
     --bg-main: #061033;
     --text-navy: #ECE8DA;
@@ -251,6 +251,34 @@ body.dark-mode .dropdown-content a {
 
 body.dark-mode .theme-toggle i {
     transform: rotate(360deg) scale(1.2);
+}
+
+.cart {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.cart i {
+    font-size: 24px;
+    color: var(--nav-text);
+}
+
+#cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: var(--light-beige);
+    color: var(--primary-navy);
+    font-size: 11px;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #0d1223;
 }
 
 .logo1 {

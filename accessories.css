@@ -254,6 +254,34 @@ body.dark-mode .theme-toggle i {
     transform: rotate(360deg) scale(1.2);
 }
 
+.cart {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.cart i {
+    font-size: 24px;
+    color: var(--nav-text);
+}
+
+#cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: var(--light-beige);
+    color: var(--primary-navy);
+    font-size: 11px;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #0d1223;
+}
+
 .products {
     display: flex;
     flex-wrap: wrap;

@@ -7,7 +7,7 @@
 }
 
 :root {
-   --primary-navy: #061033;
+    --primary-navy: #061033;
     --light-beige: #ECE8DA;
     --secondary-gray: #666;
     --accent-blue: #2C344F;
@@ -24,7 +24,7 @@
     --price-new: #061033;
     --footer-bg: #061033;
     --footer-text: #ECE8DA;
-    
+
 }
 
 body {
@@ -212,7 +212,7 @@ h1 {
     text-align: center;
     margin-top: 16px;
     margin-bottom: 0px;
-    
+
 }
 
 .sizephoto {
@@ -252,12 +252,12 @@ h1 {
 h3 {
     font-size: 1.1rem;
     margin-bottom: 5px;
-    color:var(--card-text);
+    color: var(--card-text);
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-top: 4px;
-    
+
 }
 
 
@@ -326,7 +326,7 @@ h3 {
 }
 
 .add-to-cart:hover {
-   background-color: #061033;
+    background-color: #061033;
 }
 
 
@@ -417,7 +417,7 @@ h3 {
 }
 
 body.dark-mode {
-    --nav-bg:  #C6C4BE;
+    --nav-bg: #C6C4BE;
     --nav-text: #061033;
     --bg-main: #061033;
     --text-navy: #ECE8DA;
@@ -427,26 +427,58 @@ body.dark-mode {
     --btn-bg: #ECE8DA;
     --btn-text: #061033;
     --price-new: #ffffff;
-    --footer-bg:  #C6C4BE;
+    --footer-bg: #C6C4BE;
     --footer-text: #061033;
     --cart-btn-bg: #061033;
     --cart-btn-icon: #ECE8DA;
-    
+
 }
 
 body.dark-mode .dropdown-content a {
-    color:#ECE8DA;
+    color: #ECE8DA;
 }
 
 body.dark-mode .theme-toggle i {
     transform: rotate(360deg) scale(1.2);
 }
 
+.cart {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.cart i {
+    font-size: 24px;
+    color: var(--nav-text);
+}
+
+#cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: var(--light-beige);
+    color: var(--primary-navy);
+    font-size: 11px;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #0d1223;
+}
 
 
-.hide {display: none;}
 
-.noResult  { display: none;  }
+.hide {
+    display: none;
+}
+
+.noResult {
+    display: none;
+}
 
 
 

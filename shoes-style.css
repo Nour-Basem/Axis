@@ -16,7 +16,7 @@
     --bg-main: #C6C4BE;
     --text-navy: #061033;
     --nav-border: #2C344F;
-    --card-bg:#dad8d2 ;
+    --card-bg: #dad8d2;
     --card-text: #061033;
     --cart-btn-bg: #061033;
     --cart-btn-icon: #ECE8DA;
@@ -49,7 +49,7 @@
 }
 
 body.dark-mode {
-    --nav-bg:#C6C4BE;
+    --nav-bg: #C6C4BE;
     --nav-text: #061033;
     --bg-main: #061033;
     --text-navy: #ECE8DA;
@@ -67,7 +67,7 @@ body.dark-mode {
 
 body.dark-mode .dropdown-content a {
     color: #ECE8DA;
-     
+
 }
 
 body.dark-mode .theme-toggle i {
@@ -79,6 +79,34 @@ body {
     color: var(--text-navy);
     min-height: 100vh;
     transition: 0.3s;
+}
+
+.cart {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.cart i {
+    font-size: 24px;
+    color: var(--nav-text);
+}
+
+#cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: var(--light-beige);
+    color: var(--primary-navy);
+    font-size: 11px;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #0d1223;
 }
 
 nav {
@@ -280,7 +308,7 @@ h1 {
 .shoes-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    
+
 }
 
 .shoes-card img {
@@ -288,7 +316,7 @@ h1 {
     height: 250px;
     object-fit: contain;
     margin-bottom: 15px;
-    
+
 }
 
 .price-tag {
@@ -341,10 +369,14 @@ h1 {
 .cart-btn:hover {
     background-color: #061033;
 }
+
 .hide {
     display: none;
 }
-.noResult{display: none;}
+
+.noResult {
+    display: none;
+}
 
 .main-footer {
     background-color: var(--footer-bg);
@@ -408,4 +440,3 @@ h1 {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 14px;
 }
- 
