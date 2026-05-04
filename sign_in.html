@@ -71,6 +71,7 @@
                     <label> <i class="fa-solid fa-envelope"></i> Email Address</label>
                     <input type="email" id="email" placeholder="name@example.com" required>
                 </div>
+                
                 <div class="input">
                     <label> <i class="fa-solid fa-key"></i> Password</label>
                     <div class="password-box">
@@ -78,6 +79,10 @@
                         <i class="fa-solid fa-eye" id="togglePassword"></i>
                     </div>
                     <a href="#" class="forgot">Forgot Password?</a>
+                </div>
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember" style="color:rgb(6,16,51);margin-left: 5px;">Remember me</label>
                 </div>
                 <script>
                     const toggle = document.getElementById("togglePassword");
@@ -90,7 +95,8 @@
                         this.classList.toggle("fa-eye-slash");
                     });
                 </script>
-                <button type="submit" class="btn">Unlock Axis World</button>
+                
+                <button type="submit" onclick="saveData()" class="btn">Unlock Axis World</button>
                 <div class="separator">
                     <span>OR</span>
                 </div>

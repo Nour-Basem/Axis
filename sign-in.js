@@ -42,6 +42,7 @@ function saveData() {
 
   if (remember) {
     localStorage.setItem("userEmail", email);
+    console.log("Data saved!");
   } else {
     localStorage.removeItem("userEmail");
   }
