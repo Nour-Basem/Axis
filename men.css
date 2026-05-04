@@ -7,7 +7,7 @@
 }
 
 :root {
-    -primary-navy: #061033;
+    --primary-navy: #061033;
     --light-beige: #ECE8DA;
     --secondary-gray: #666;
     --accent-blue: #2C344F;
