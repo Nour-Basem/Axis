@@ -39,9 +39,10 @@
             <div class="icons">
                 <div class="search">
                     <a href="#">
-                        <input type="text" placeholder="Search..." class="search-input">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search..." class="search-input"id="searchInput" >
+                        <i class="fa-solid fa-magnifying-glass" ></i>
                     </a>
+                    <div class="search-results category-grid hide" id="searchResultsContainer"></div>
                 </div>
                   <div class="theme-toggle" id="themetoggle">
                     <i class="fa-solid fa-moon" id="themeicon"></i>
@@ -76,7 +77,7 @@
 </div>
     </section>
 
-    <section class="categories">
+    <section class="categories" id="categories-section">
     <h2 class="section-title">Shop by Category</h2>
     <div class="category-grid">
         <a href="girls.html" class="category-card">
@@ -125,11 +126,13 @@
         </a>
     </div>
 </section>
+<div class="noResult">
+    
+</div>
 <script src="main.js"></script>
 <script src="home.js"></script>
 </body>
 </html>
-</body>
    <footer class="main-footer">
     <div class="footer-container">
         <div class="footer-section about">
@@ -159,6 +162,5 @@
     <div class="footer-bottom">
         <p>&copy; 2026 Axis Store | Designed by Axis team</p>
     </div>
-</footer>
 </footer>
 </html>

@@ -43,3 +43,29 @@ window.onload=function(){
     logoutBtn.style.display = 'block';
   };
 }
+document.addEventListener('DOMContentLoaded', function () {
+    const searchInput = document.querySelector('.search-input');
+    const categoryCards = document.querySelectorAll('.category-card');
+    const heroSection = document.querySelector('.hero');
+    if (!searchInput) return;
+    searchInput.addEventListener('input', function () {
+        const searchTerm = this.value.toLowerCase().trim();
+        if (searchTerm === "") {
+            if (heroSection) heroSection.classList.remove('hide');
+            categoryCards.forEach(card => card.classList.remove('hide'));
+            return;
+        }
+        if (heroSection) heroSection.classList.add('hide');
+        categoryCards.forEach(card => {
+            const span = card.querySelector('span');
+            if (span) {
+                const categoryName = span.textContent.toLowerCase();
+                if (categoryName.includes(searchTerm)) {
+                    card.classList.remove('hide');
+                } else {
+                    card.classList.add('hide');
+                }
+            }
+        });
+    });
+});

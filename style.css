@@ -573,3 +573,32 @@ body.dark-mode .theme-toggle i {
     transition: 0.3s;
     color: #666;
 }
+.noResult{
+    display: none;
+}
+.search-results {
+    margin-top: 10px; 
+    margin-bottom: 20px; 
+    padding: 20px;
+}
+
+
+.hide {
+    display: none !important;
+}
+.category-card:not(.hide) {
+    max-width: 400px; 
+    margin: 20px auto; 
+    transition: transform 0.3s ease;
+}
+.category-card:not(.hide):hover {
+    transform: scale(1.05); 
+}
+
+
+.category-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
