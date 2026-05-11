@@ -233,7 +233,6 @@ thead th {
 }
 
 thead th:first-child {
-    overflow: hidden;
     border-top-left-radius: 12px;
 }
 
