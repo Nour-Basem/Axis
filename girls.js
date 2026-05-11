@@ -63,7 +63,7 @@ buttons.forEach((btn) => {
 document.addEventListener('DOMContentLoaded', function () {
     const searchInput = document.querySelector('.search-input');
     const productCards = document.querySelectorAll('.product-card');
-    const noResult = document.querySelector('noResult');
+    const noResult = document.querySelector('.noResult');
 
     searchInput.addEventListener('input', function () {
         const searchTerm = this.value.toLowerCase().trim();
@@ -82,20 +82,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
     });
 });
-function logout(){
-  localStorage.removeItem("userEmail");
-  alert("You are about to log out");
-  window.location.href="sign_in.html";
+function logout() {
+    localStorage.removeItem("userEmail");
+    alert("You are about to log out");
+    window.location.href = "sign_in.html";
 }
-window.onload=function(){
-  const logoutBtn = document.getElementById('logout-btn');
-  const userEmail = localStorage.getItem('userEmail');
-  if(!userEmail){
-    logoutBtn.style.display = 'none';
-  }
-  else{
-    logoutBtn.style.display = 'block';
-  };
+window.onload = function () {
+    const logoutBtn = document.getElementById('logout-btn');
+    const userEmail = localStorage.getItem('userEmail');
+    if (!userEmail) {
+        logoutBtn.style.display = 'none';
+    }
+    else {
+        logoutBtn.style.display = 'block';
+    };
 }
 
 
