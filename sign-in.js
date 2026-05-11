@@ -48,21 +48,22 @@ function saveData() {
   }
 }
 
-window.onload = function () {
+window.addEventListener('load', function () {
   let rememberBox = document.getElementById("remember");
   let savedEmail = localStorage.getItem("userEmail");
   if (savedEmail && rememberBox) {
     document.getElementById("email").value = savedEmail;
     rememberBox.checked = true;
   }
-};
+  
+});
 function logout(){
   localStorage.removeItem("userEmail");
   alert("You are about to log out");
   window.location.href="sign_in.html";
-}
-window.onload=function(){
-  const logoutBtn = document.getElementById('logout-btn');
+};
+window.addEventListener('load', function(){
+   const logoutBtn = document.getElementById('logout-btn');
   const userEmail = localStorage.getItem('userEmail');
   if(!userEmail){
     logoutBtn.style.display = 'none';
@@ -70,4 +71,4 @@ window.onload=function(){
   else{
     logoutBtn.style.display = 'block';
   };
-}
+});

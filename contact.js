@@ -32,8 +32,8 @@ function logout(){
   localStorage.removeItem("userEmail");
   alert("You are about to log out");
   window.location.href="sign_in.html";
-}
-window.onload=function(){
+};
+window.addEventListener('load',function(){
   const logoutBtn = document.getElementById('logout-btn');
   const userEmail = localStorage.getItem('userEmail');
   if(!userEmail){
@@ -42,4 +42,4 @@ window.onload=function(){
   else{
     logoutBtn.style.display = 'block';
   };
-}
+});
