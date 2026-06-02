@@ -32,7 +32,7 @@ body {
     color: var(--text-navy);
     min-height: 100vh;
     margin: 0;
-     padding-top: 80px;
+    padding-top: 80px;
 }
 
 .categories {
@@ -66,7 +66,7 @@ nav {
     color: var(--nav-text);
     transition: 0.3s;
     border-bottom: 1px solid var(--accent-blue);
-     position: fixed;
+    position: fixed;
     left: 0;
     width: 100%;
     top: 0;
@@ -312,7 +312,7 @@ tbody tr:hover {
 }
 
 .footer-section a:hover {
-    
+
     padding-left: 5px;
 }
 
@@ -400,9 +400,10 @@ body.dark-mode .theme-toggle i {
     filter: none;
     color: #ECE8DA;
 }
-#logout-btn{
+
+#logout-btn {
     background-color: var(--btn-text);
-    color:var(--bg-main);
+    color: var(--bg-main);
     border: none;
     padding: 8px 15px;
     cursor: pointer;
@@ -410,15 +411,18 @@ body.dark-mode .theme-toggle i {
     transition: 0.3s;
 
 }
-#logout-btn:hover{
+
+#logout-btn:hover {
     color: #666;
 }
-.dark-mode #logout-btn{
-    background-color: var(--nav-bg) ;
-    color: var(--cart-btn-bg) ;
+
+.dark-mode #logout-btn {
+    background-color: var(--nav-bg);
+    color: var(--cart-btn-bg);
 
 }
-.dark-mode #logout-btn:hover{
+
+.dark-mode #logout-btn:hover {
     transition: 0.3s;
     color: #666;
 }
