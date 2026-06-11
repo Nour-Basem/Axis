@@ -80,7 +80,7 @@ body {
     min-height: 100vh;
     transition: 0.3s;
     margin: 0;
-     padding-top: 80px;
+    padding-top: 80px;
 }
 
 .cart {
@@ -119,7 +119,7 @@ nav {
     color: var(--nav-text) !important;
     transition: 0.3s;
     border-bottom: 1px solid var(--accent-blue);
-     position: fixed;
+    position: fixed;
     left: 0;
     width: 100%;
     top: 0;
@@ -440,9 +440,10 @@ h1 {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 14px;
 }
-#logout-btn{
+
+#logout-btn {
     background-color: var(--btn-text);
-    color:var(--bg-main);
+    color: var(--bg-main);
     border: none;
     padding: 8px 15px;
     cursor: pointer;
@@ -450,15 +451,173 @@ h1 {
     transition: 0.3s;
 
 }
-#logout-btn:hover{
+
+#logout-btn:hover {
     color: #666;
 }
-.dark-mode #logout-btn{
-    background-color: var(--nav-bg) ;
-    color: var(--cart-btn-bg) ;
+
+.dark-mode #logout-btn {
+    background-color: var(--nav-bg);
+    color: var(--cart-btn-bg);
 
 }
-.dark-mode #logout-btn:hover{
+
+.dark-mode #logout-btn:hover {
     transition: 0.3s;
     color: #666;
+}
+
+@media (max-width: 768px) {
+    body {
+
+        padding-top: 140px !important;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 8px;
+        padding: 10px 4%;
+    }
+
+    nav .logo {
+        justify-content: center;
+        width: 100%;
+        order: 1;
+    }
+
+
+    nav .logo img {
+        height: 40px !important;
+        width: auto !important;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: center;
+        gap: 12px;
+        order: 2;
+        flex-direction: row;
+    }
+
+    nav ul li a {
+        font-size: 11px;
+    }
+
+    .dropdown-content {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100%;
+    }
+
+    nav .icons {
+        width: 100%;
+        justify-content: center;
+        gap: 12px;
+        order: 3;
+        margin-top: 4px;
+    }
+
+    .icons a {
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    #logout-btn {
+        margin-left: 0;
+        padding: 4px 10px;
+        font-size: 11px;
+    }
+
+    .theme-toggle {
+        margin-left: 0;
+    }
+
+    .search:hover .search-input {
+        width: 100px;
+    }
+
+
+    .shoes,
+    .products {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        /* منتجين في كل صف */
+        gap: 12px !important;
+        padding: 10px !important;
+    }
+
+
+    .shoes-card,
+    .product-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: var(--card-bg, #fff);
+
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
+
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+
+    .shoes-card img,
+    .product-card img {
+        width: 100% !important;
+        height: 150px !important;
+
+        object-fit: cover !important;
+        border-radius: 8px;
+    }
+
+    ي .shoes-card h3,
+    .product-card h3 {
+        font-size: 12px !important;
+        margin: 6px 0 3px 0 !important;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+
+    .shoes-card span,
+    .product-card span {
+        font-size: 11px !important;
+    }
+
+
+    .cart-btn {
+        padding: 6px !important;
+        font-size: 11px !important;
+        margin-top: 8px !important;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin: 15px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .social-icons a {
+        margin: 0 10px;
+    }
 }

@@ -3,8 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-
-
 }
 
 :root {
@@ -33,6 +31,12 @@ body {
     min-height: 100vh;
     margin: 0;
     padding-top: 80px;
+}
+
+body h1.page-title {
+    text-align: center;
+    color: var(--text-navy) !important;
+    margin: 30px 0;
 }
 
 .categories {
@@ -126,7 +130,6 @@ nav ul li a:hover {
 
 .dropdown:hover .dropdown-content {
     display: block;
-    animation: fadeInUp 0.3s ease;
     color: var(--primary-navy);
 }
 
@@ -222,9 +225,7 @@ nav ul li a:hover {
 .theme-toggle i {
     color: var(--nav-text);
     font-size: 20px;
-    transition: all 0.3s ease;
     transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), color 0.3s ease;
-
 }
 
 .theme-toggle i:hover {
@@ -314,10 +315,8 @@ body.dark-mode .theme-toggle i {
     width: 100%;
     height: 300px;
     object-fit: contain;
-
     border-radius: 10px;
     margin-bottom: 15px;
-
 }
 
 .old {
@@ -333,6 +332,8 @@ body.dark-mode .theme-toggle i {
 
 .product-card p {
     display: none;
+    margin: 10px 0;
+    font-size: 14px;
 }
 
 .cart-btn {
@@ -349,7 +350,6 @@ body.dark-mode .theme-toggle i {
     width: fit-content;
     margin: 15px auto 0;
     transition: all 0.3s ease;
-
 }
 
 .cart-text {
@@ -412,7 +412,6 @@ body.dark-mode .theme-toggle i {
 }
 
 .footer-section a:hover {
-
     padding-left: 5px;
 }
 
@@ -441,7 +440,6 @@ body.dark-mode .theme-toggle i {
     cursor: pointer;
     font-weight: bold;
     transition: 0.3s;
-
 }
 
 #logout-btn:hover {
@@ -451,7 +449,6 @@ body.dark-mode .theme-toggle i {
 .dark-mode #logout-btn {
     background-color: var(--nav-bg);
     color: var(--cart-btn-bg);
-
 }
 
 .dark-mode #logout-btn:hover {
@@ -459,112 +456,99 @@ body.dark-mode .theme-toggle i {
     color: #666;
 }
 
-@media (max-width: 992px) {
-
-    nav {
-        flex-wrap: wrap;
-        padding: 10px 3%;
-    }
-
-    nav ul {
-        gap: 15px;
-        flex-wrap: wrap;
-    }
-
-    .products {
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .product-card {
-        width: 45%;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-
 @media (max-width: 768px) {
-
     body {
-        padding-top: 220px;
+        padding-top: 130px !important;
     }
 
     nav {
         flex-direction: column;
-        padding: 10px;
+        gap: 8px;
+        padding: 10px 4%;
+        min-height: auto;
     }
 
-    .logo {
+    nav .logo {
         justify-content: center;
-        margin-bottom: 10px;
+        width: 100%;
+        order: 1;
+        margin-bottom: 2px;
+    }
+
+    .logo-photo {
+        height: 50px;
     }
 
     nav ul {
-        flex-direction: column;
-        gap: 10px;
         width: 100%;
+        justify-content: center;
+        gap: 12px;
+        order: 2;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
-    .icons {
-        margin-top: 10px;
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .dropdown-content {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100%;
+    }
+
+    nav .icons {
+        width: 100%;
         justify-content: center;
-        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+        order: 3;
+        margin-top: 5px;
+    }
+
+    .icons a {
+        margin-left: 0;
+    }
+
+    #logout-btn {
+        margin-left: 0;
+        padding: 4px 10px;
+        font-size: 13px;
+        width: auto;
+    }
+
+    .theme-toggle {
+        margin-left: 0;
     }
 
     .search:hover .search-input {
         width: 130px;
     }
 
-    .products {
-        padding: 15px;
-        gap: 20px;
-    }
-
-    .product-card {
-        width: 100%;
-        max-width: 350px;
-    }
-
-    .product-card img {
-        height: 250px;
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .footer-section {
-        margin: 10px 0;
-    }
-}
-
-
-@media (max-width: 480px) {
-
-    .logo-photo {
-        height: 60px;
-    }
-
-    .text {
-        font-size: 24px;
-    }
-
-    .product-card {
-        padding: 15px;
-    }
-
-    .product-card h3 {
-        font-size: 16px;
-    }
-
-    .old,
-    .new {
-        font-size: 14px;
-    }
-
-
-
-    #logout-btn {
+        margin: 15px 0;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .social-icons a {
+        margin: 0 10px;
     }
 }

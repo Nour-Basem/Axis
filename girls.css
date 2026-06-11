@@ -459,60 +459,56 @@ body.dark-mode .theme-toggle i {
     color: #666;
 }
 
-@media (max-width: 992px) {
-
-    nav {
-        flex-wrap: wrap;
-        padding: 10px 3%;
-    }
-
-    nav ul {
-        gap: 15px;
-        flex-wrap: wrap;
-    }
-
-    .products {
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .product-card {
-        width: 45%;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
-
 @media (max-width: 768px) {
-
     body {
-        padding-top: 220px;
+        padding-top: 180px;
     }
 
     nav {
         flex-direction: column;
-        padding: 10px;
+        gap: 15px;
+        padding: 15px 4%;
     }
 
-    .logo {
+    nav .logo {
         justify-content: center;
-        margin-bottom: 10px;
+        width: 100%;
+        order: 1;
     }
 
     nav ul {
-        flex-direction: column;
-        gap: 10px;
         width: 100%;
+        justify-content: center;
+        gap: 15px;
+        order: 2;
+        flex-direction: row;
     }
 
-    .icons {
-        margin-top: 10px;
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .dropdown-content {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100%;
+    }
+
+    nav .icons {
+        width: 100%;
         justify-content: center;
-        flex-wrap: wrap;
+        gap: 15px;
+        order: 3;
+        margin-top: 5px;
+    }
+
+    .icons a {
+        margin-left: 0;
+    }
+
+    .theme-toggle {
+        margin-left: 0;
     }
 
     .search:hover .search-input {
@@ -533,38 +529,28 @@ body.dark-mode .theme-toggle i {
         height: 250px;
     }
 
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
     .footer-section {
-        margin: 10px 0;
-    }
-}
-
-
-@media (max-width: 480px) {
-
-    .logo-photo {
-        height: 60px;
-    }
-
-    .text {
-        font-size: 24px;
-    }
-
-    .product-card {
-        padding: 15px;
-    }
-
-    .product-card h3 {
-        font-size: 16px;
-    }
-
-    .old,
-    .new {
-        font-size: 14px;
-    }
-
-
-
-    #logout-btn {
+        margin: 15px 0;
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .social-icons a {
+        margin: 0 10px;
     }
 }
